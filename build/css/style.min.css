@@ -879,6 +879,10 @@ body {
     background: #cd1026;
 }
 
+.news-slider__image img {
+    width: 100%;
+}
+
 .custom_paging {
     position: absolute;
     top: 0;
@@ -970,14 +974,12 @@ body {
 }
 
 .tabs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     list-style-type: none;
     padding: 0;
+}
+
+.tabs__item {
+    display: inline-block;
 }
 
 .tabs__item ~ .tabs__item {
@@ -992,7 +994,7 @@ body {
     font-weight: bold;
 }
 
-.tabs__link.active {
+.tabs__item.active .tabs__link {
     background: #c8031a;
     color: white;
 }

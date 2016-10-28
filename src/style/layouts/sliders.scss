@@ -431,6 +431,26 @@
 	}
 }
 
+.news-slider {
+	&__item {
+
+	}
+	&__image {
+		img {
+			width: 100%;
+		}
+	}
+	&__content {
+
+	}
+	&__title {
+
+	}
+	&__text {
+
+	}
+}
+
 .custom_paging {
 	position: absolute;
 	top: 0;
@@ -450,4 +470,3 @@
 		}
 	}
 }
-								

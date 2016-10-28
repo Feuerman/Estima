@@ -4,147 +4,106 @@ body
 	.inner-wrapper
 		include templates/header.jade
 		section.inner-content
-				.personal
-					.container
-						.personal__name Wellcome Alexey
-						.personal-panel
-							button.personal-menu-btn Documents
-							ul.personal-menu
-								li.personal-menu__item
-									a.personal-menu__link(href="/personal.html") profile
-								li.personal-menu__item
-									a.personal-menu__link(href="/personal-promo.html") Promo
-								li.personal-menu__item
-									a.personal-menu__link.active(href="#") documents
-							button.personal__logout
-								| exit
-								i
-				.personal-form-wrap
-					.container
-						.personal-form
-							ul.documents-tabs.row
-								li.col-sm-3.col-xs-6.documents-tabs__item Certificates
-								li.col-sm-3.col-xs-6.documents-tabs__item Catalogues
-								li.col-sm-3.col-xs-6.documents-tabs__item Technical information
-								li.col-sm-3.col-xs-6.documents-tabs__item Expertise conclusion
-							.hr
-							.documents-tabs-content
-								.documents-tabs-content__item
-									.row
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__image
-												img(src="/img/documents-1.jpg", alt="")
-											.documents-tizer__content
-												.documents-tizer__desc General Catalogue ESTIMA 2016
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__image
-												img(src="/img/documents-2.jpg", alt="")
-											.documents-tizer__content
-												.documents-tizer__desc Catalogue of Compliance for glazed ceramic granite (frost F200)
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__image
-												img(src="/img/documents-3.jpg", alt="")
-											.documents-tizer__content
-												.documents-tizer__desc Certificate of Conformity: catalogue ESTIMA Samara    
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-								.documents-tabs-content__item
-									.row
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__content
-												.documents-tizer__desc General Catalogue ESTIMA 2016
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__content
-												.documents-tizer__desc Catalogue of Compliance for glazed ceramic granite (frost F200)
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__content
-												.documents-tizer__desc Certificate of Conformity: catalogue ESTIMA Samara    
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-								.documents-tabs-content__item
-									.row
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__image
-												img(src="/img/documents-2.jpg", alt="")
-											.documents-tizer__content
-												.documents-tizer__desc Catalogue of Compliance for glazed ceramic granite (frost F200)
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__image
-												img(src="/img/documents-1.jpg", alt="")
-											.documents-tizer__content
-												.documents-tizer__desc General Catalogue ESTIMA 2016
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__image
-												img(src="/img/documents-3.jpg", alt="")
-											.documents-tizer__content
-												.documents-tizer__desc Certificate of Conformity: catalogue ESTIMA Samara
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-								.documents-tabs-content__item
-									.row
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__content
-												.documents-tizer__desc General Catalogue ESTIMA 2016
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__content
-												.documents-tizer__desc Certificate of Conformity: catalogue ESTIMA Samara
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
-										.col-md-4.col-sm-6.documents-tizer
-											.documents-tizer__content
-												.documents-tizer__desc Catalogue of Compliance for glazed ceramic granite (frost F200)
-												.documents-tizer__panel
-													a.btn--arrow-right.pull-left(href="#") LEARN MORE
-													.download.pull-right
-														.download__size 435 Kb
-														a.download__icon(href="#")
+				.container
+					.page-title
+				.news-slider
+					.news-slider__item
+						.news-slider__image
+							img(src="/img/news__header.jpg", alt="")
+						.news-slider__content
+							.news-slider__title Promo START for this site
+							.news-slider__text Conveniently, the raws divided into main raw additional Birthday Celebration of show-room «ESTIMA Ceramic Studio« Krasnodar!
+					.news-slider__item
+						.news-slider__image
+							img(src="/img/news__header.jpg", alt="")
+						.news-slider__content
+							.news-slider__title Promo START for this site
+							.news-slider__text Conveniently, the raws divided into main raw additional Birthday Celebration of show-room «ESTIMA Ceramic Studio« Krasnodar!
+					.news-slider__item
+						.news-slider__image
+							img(src="/img/news__header.jpg", alt="")
+						.news-slider__content
+							.news-slider__title Promo START for this site
+							.news-slider__text Conveniently, the raws divided into main raw additional Birthday Celebration of show-room «ESTIMA Ceramic Studio« Krasnodar!
+				.container
+					ul.tabs.tabs--horizontal.tabs--main-news
+						li.tabs__item
+							a.tabs__link.active(href="#tab1") ALL
+						li.tabs__item
+							a.tabs__link(href="#tab2") NEWS
+						li.tabs__item
+							a.tabs__link(href="#tab3") EVENTS
+						li.tabs__item
+							a.tabs__link(href="#tab4") ARCTICLES
+						li.tabs__item
+							a.tabs__link(href="#tab5") PROMO
+						li.tabs__item
+							a.tabs__link(href="#tab6") EXHIBITION
+					.main-news.active	
+						.main-news-item
+							img.main-news-item__image(src="/img/main-news__item-1.jpg", alt="")
+							.main-news-item__content
+								.main-news-item__text
+									p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+								.main-news-item__info
+									span.main-news-item__info--category News
+									span.main-news-item__info--date 22 August, 2016
+						.main-news-item
+							img.main-news-item__image(src="/img/main-news__item-2.jpg", alt="")
+							.main-news-item__content
+								.main-news-item__text
+									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+								.main-news-item__info
+									span.main-news-item__info--category News
+									span.main-news-item__info--date 22 August, 2016
+						.main-news-item
+							img.main-news-item__image(src="/img/main-news__item-3.jpg", alt="")
+							.main-news-item__content
+								.main-news-item__text
+									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+								.main-news-item__info
+									span.main-news-item__info--category News
+									span.main-news-item__info--date 22 August, 2016
+						.main-news-item
+							img.main-news-item__image(src="/img/main-news__item-4.jpg", alt="")
+							.main-news-item__content
+								.main-news-item__text
+									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+								.main-news-item__info
+									span.main-news-item__info--category News
+									span.main-news-item__info--date 22 August, 2016
+						.main-news-item
+							img.main-news-item__image(src="/img/main-news__item-5.jpg", alt="")
+							.main-news-item__content
+								.main-news-item__text
+									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+								.main-news-item__info
+									span.main-news-item__info--category News
+									span.main-news-item__info--date 22 August, 2016
+						.main-news-item
+							img.main-news-item__image(src="/img/main-news__item-6.jpg", alt="")
+							.main-news-item__content
+								.main-news-item__text
+									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+								.main-news-item__info
+									span.main-news-item__info--category News
+									span.main-news-item__info--date 22 August, 2016
+						.main-news-item
+							img.main-news-item__image(src="/img/main-news__item-7.jpg", alt="")
+							.main-news-item__content
+								.main-news-item__text
+									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+								.main-news-item__info
+									span.main-news-item__info--category News
+									span.main-news-item__info--date 22 August, 2016
+						.main-news-item
+							img.main-news-item__image(src="/img/main-news__item-8.jpg", alt="")
+							.main-news-item__content
+								.main-news-item__text
+									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+								.main-news-item__info
+									span.main-news-item__info--category News
+									span.main-news-item__info--date 22 August, 2016
 				.menu-bottom-inner-wrap.hidden-xs
 					.container
 						.row
