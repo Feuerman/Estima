@@ -1,0 +1,75 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.main-page-bg-slider
+		.main-page-bg-slider__item.main-page-bg__changeImage(data-current-page="main" style="background-image: url('img/bg__main--first.jpg');")
+		.main-page-bg-slider__item(data-current-page="main-catalog")
+		.main-page-bg-slider__item(data-current-page="main-documents" style="background-image: url('img/bg__main--production.jpg');")
+			video(id="bgVideo" width='100%', height='100%', controls='none', poster='img/bg__main--production.jpg', loop)
+				source(src='video/bg-video.mp4', type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+			.bg-video-overlay
+		.main-page-bg-slider__item(data-current-page="main-news")
+		.main-page-bg-slider__item(data-current-page="main-about")
+			.main-about-news-bg
+				.main-about-news-bg__item.main-about-news-bg__item--top(style="background-image: url('/img/about-1.jpg')")
+				.main-about-news-bg__item.main-about-news-bg__item--bottom(style="background-image: url('/img/about-2.jpg')")
+		.main-page-bg-slider__item(data-current-page="main-contacts" style="background-image: url('img/bg__main--contacts.jpg');")
+			.main-contacts-bg
+		.main-page-bg-slider__item(data-current-page="main-portfolio")
+	.main-wrapper
+		header.header.main-row
+			.container
+				.site-logo.dark-theme
+					a(href="/")
+				.header__panel
+					button.icon.icon__auth.dark-theme
+					button.icon.icon__search.dark-theme.btn-modal(data-target-modal="search-modal")
+					button.select-language rus
+					.main-menu-panel
+						button.main-menu-button.dark-theme.btn-modal(data-target-modal="main-menu-modal")
+							| menu
+							span.main-menu-button-icon
+		section.main-content.main-row
+			.container
+				.main-pagination.dark-theme
+				.main-page-slider
+					include templates/main/page-slider/index.jade
+				.row.menu-bottom-wrap
+					ul.menu-bottom
+						li.menu-bottom__item
+							a.menu-bottom__link(href="#") Catalogue
+						li.menu-bottom__sep
+						li.menu-bottom__item
+							a.menu-bottom__link(href="#") Documents
+						li.menu-bottom__sep
+						li.menu-bottom__item
+							a.menu-bottom__link(href="#") Portfolio
+						li.menu-bottom__sep
+						li.menu-bottom__item
+							a.menu-bottom__link(href="#") News&Events
+						li.menu-bottom__sep
+						li.menu-bottom__item
+							a.menu-bottom__link(href="#") About
+						li.menu-bottom__sep
+						li.menu-bottom__item
+							a.menu-bottom__link(href="#") Contacts
+				.row.scroll-up
+					button.scroll-up__button
+		footer.footer.footer-main
+			.container
+				form.subscribe
+					input.subscribe__input(type="text" placeholder="Subscribe")
+					input(type="submit" value="").subscribe__button
+				.row
+					.col-xs-6
+						.copyright.dark-theme © Estima Company						
+					.col-xs-6.social.text-right
+						a.social__item.social__item--vk(href="#")
+						a.social__item.social__item--fb(href="#")
+						a.social__item.social__item--youtube(href="#")
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade
+	.main-bottom-nav__next-page.animate
+		//- .mouse_scroll
+		//- 	.mouse
+		//- 		.wheel

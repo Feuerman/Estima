@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head></head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="vendor/slick/slick.css">
+<link rel="stylesheet" href="vendor/slick/slick-theme.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/common.js"></script>
+<div id="page-preloader"><span class="spinner"></span></div>
+<body>
+  <div class="main-page-bg-slider">
+    <div data-current-page="main" style="background-image: url('img/bg__main--first.jpg');" class="main-page-bg-slider__item main-page-bg__changeImage"></div>
+    <div data-current-page="main-catalog" class="main-page-bg-slider__item"></div>
+    <div data-current-page="main-documents" style="background-image: url('img/bg__main--production.jpg');" class="main-page-bg-slider__item">
+      <video id="bgVideo" width="100%" height="100%" controls="none" poster="img/bg__main--production.jpg" loop>
+        <source src="video/bg-video.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+      </video>
+      <div class="bg-video-overlay"></div>
+    </div>
+    <div data-current-page="main-news" class="main-page-bg-slider__item"></div>
+    <div data-current-page="main-about" class="main-page-bg-slider__item">
+      <div class="main-about-news-bg">
+        <div style="background-image: url('/img/about-1.jpg')" class="main-about-news-bg__item main-about-news-bg__item--top"></div>
+        <div style="background-image: url('/img/about-2.jpg')" class="main-about-news-bg__item main-about-news-bg__item--bottom"></div>
+      </div>
+    </div>
+    <div data-current-page="main-contacts" style="background-image: url('img/bg__main--contacts.jpg');" class="main-page-bg-slider__item">
+      <div class="main-contacts-bg"></div>
+    </div>
+    <div data-current-page="main-portfolio" class="main-page-bg-slider__item"></div>
+  </div>
+  <div class="main-wrapper">
+    <header class="header main-row">
+      <div class="container">
+        <div class="site-logo dark-theme"><a href="/"></a></div>
+        <div class="header__panel">
+          <button class="icon icon__auth dark-theme"></button>
+          <button data-target-modal="search-modal" class="icon icon__search dark-theme btn-modal"></button>
+          <button class="select-language">rus</button>
+          <div class="main-menu-panel">
+            <button data-target-modal="main-menu-modal" class="main-menu-button dark-theme btn-modal">menu<span class="main-menu-button-icon"></span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main-content main-row">
+      <div class="container">
+        <div class="main-pagination dark-theme"></div>
+        <div class="main-page-slider">
+          <div class="main-page-slider__item">
+            <div style="background-image: url('img/bg__main--first.jpg');" class="main-page-bg__changeImage"></div>
+            <div class="main-page-content">
+              <div class="company-slider-wrap">
+                <div class="company-slider">
+                  <div class="company-slider__item">
+                    <div class="company-slider__title">General Catalogue ESTIMA 2016!</div>
+                    <div class="company-slider__text">We are pleased to announce the release of our new General Catalogue ESTIMA 2016!</div><a href="#" class="company-slider__link btn--arrow-right">READ MORE</a>
+                  </div>
+                  <div class="company-slider__item">
+                    <div class="company-slider__title">General Catalogue ESTIMA 2016!</div>
+                    <div class="company-slider__text">We are pleased to announce the release of our new General Catalogue ESTIMA 2016!We are pleased to announce the release of our new General Catalogue ESTIMA 2016!</div><a href="#" class="company-slider__link btn--arrow-right">READ MORE</a>
+                  </div>
+                  <div class="company-slider__item">
+                    <div class="company-slider__title">General Catalogue ESTIMA 2016!</div>
+                    <div class="company-slider__text">We are pleased to announce the release of our new General Catalogue ESTIMA 2016!We are pleased to announce the release of our new General Catalogue ESTIMA 2016!We are pleased to announce the release of our new General Catalogue ESTIMA 2016!</div><a href="#" class="company-slider__link btn--arrow-right">READ MORE</a>
+                  </div>
+                  <div class="company-slider__item">
+                    <div class="company-slider__title">General Catalogue ESTIMA 2016!</div>
+                    <div class="company-slider__text">We are pleased to announce the release of our new General Catalogue ESTIMA 2016!We are pleased to announce the release of our new General Catalogue ESTIMA 2016!We are pleased to announce the release of our new General Catalogue ESTIMA 2016!We are pleased to announce the release of our new General Catalogue ESTIMA 2016!</div><a href="#" class="company-slider__link btn--arrow-right">READ MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="company-slider__nav">
+                <button class="company-slider__nav-item company-slider__nav-prev"></button>
+                <button class="company-slider__nav-item company-slider__nav-next"></button>
+              </div>
+            </div>
+          </div>
+          <div class="main-page-slider__item">
+            <div class="main-page-content">
+              <div class="main-catalog">
+                <div class="main-catalog-slider-wrap">
+                  <div class="main-catalog-slider">
+                    <div class="main-catalog-tizers"><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-1.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">BOLERO</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-2.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">CAPRI</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-3.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">DREAM</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-4.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">POLARIS</span></a></div>
+                    <div class="main-catalog-tizers"><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-3.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">DREAM</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-4.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">POLARIS</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-1.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">BOLERO</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-2.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">CAPRI</span></a></div>
+                    <div class="main-catalog-tizers"><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-2.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">CAPRI</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-3.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">DREAM</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-1.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">BOLERO								</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-4.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">POLARIS</span></a></div>
+                  </div>
+                  <div class="main-catalog-bottom-text">
+                    <p>Marble is a metamorphic rock that may be foliated or non-foliated, composed	</p>
+                  </div>
+                </div>
+                <div class="main-catalog-menu">
+                  <div class="main-catalog-menu__title">Catalogue</div>
+                  <ul class="main-catalog-menu__list">
+                    <li class="main-catalog-menu__list-item"><a href="#tabs1" class="main-catalog-menu__link active">Marble</a></li>
+                    <li class="main-catalog-menu__list-item"><a href="#tabs2" class="main-catalog-menu__link">Wood</a></li>
+                    <li class="main-catalog-menu__list-item"><a href="#" class="main-catalog-menu__link">Stone</a></li>
+                    <li class="main-catalog-menu__list-item"><a href="#" class="main-catalog-menu__link">Cement</a></li>
+                    <li class="main-catalog-menu__list-item"><a href="#" class="main-catalog-menu__link">Design</a></li>
+                    <li class="main-catalog-menu__list-item"><a href="#" class="main-catalog-menu__link">Commercial</a></li>
+                    <li class="main-catalog-menu__list-item"><a href="#" class="main-catalog-menu__link">Vertical</a></li>
+                    <li class="main-catalog-menu__list-item"><a href="#" class="main-catalog-menu__link">Ceramic tile</a></li>
+                    <li class="main-catalog-menu__list-item"><a href="#" class="main-catalog-menu__link">Decoration</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-bottom-nav"><a href="#" class="main-bottom-nav__all-items btn--arrow-right">SEE ALL</a>
+              <div class="main-bottom-nav__arrows">
+                <button class="main-catalog-slider--prev main-bottom-nav__arrows--left"></button>
+                <button class="main-catalog-slider--next main-bottom-nav__arrows--right"></button>
+              </div>
+            </div>
+          </div>
+          <div class="main-page-slider__item">
+            <div class="main-page-content">
+              <div class="main-production">
+                <div class="main-production-desc">
+                  <div class="main-production-desc__col">
+                    <div class="page-title">PRODUCTION</div>
+                    <p>Company Estima - a recognized domestic leader in the production of porcelain. We are the first manufacturer who has organized the production of this material in our country.</p>
+                    <div><a href="#" class="btn--arrow-right">SEE ALL</a></div>
+                  </div>
+                  <div class="main-production-desc__col main-production-desc__col--icon"><img src="/img/icon__youtube.png" alt="" class="bg-video-button"></div>
+                </div>
+                <div class="main-production-video">
+                  <div class="main-production-video__item">
+                    <div class="main-production-video__content"><a data-video-url="https://www.youtube.com/embed/UNeWLCRpQSA" href="#" class="main-production-video__modal"><img src="https://i.ytimg.com/vi/UNeWLCRpQSA/hqdefault.jpg?custom=true&amp;w=196&amp;h=110&amp;stc=true&amp;jpg444=true&amp;jpgq=90&amp;sp=68&amp;sigh=JcDHzIIhSO4-xORm4bkc-pWfcDQ" alt=""></a></div>
+                    <div class="main-production-video__title">
+                      <p>The name for the video in a few lines</p>
+                    </div>
+                  </div>
+                  <div class="main-production-video__item">
+                    <div class="main-production-video__content"><a data-video-url="https://www.youtube.com/embed/tF8F_9LNiTY" href="#" class="main-production-video__modal"><img src="https://i.ytimg.com/vi/tF8F_9LNiTY/hqdefault.jpg?custom=true&amp;w=196&amp;h=110&amp;stc=true&amp;jpg444=true&amp;jpgq=90&amp;sp=68&amp;sigh=VmwXbVgyV1b2Oh_UUceTNtHBdNg" alt=""></a></div>
+                    <div class="main-production-video__title">
+                      <p>The name for the video in a few lines</p>
+                    </div>
+                  </div>
+                  <div class="main-production-video__item">
+                    <div class="main-production-video__content"><a data-video-url="https://www.youtube.com/embed/Dxi_gZPOebw" href="#" class="main-production-video__modal"><img src="https://i.ytimg.com/vi/Dxi_gZPOebw/hqdefault.jpg?custom=true&amp;w=196&amp;h=110&amp;stc=true&amp;jpg444=true&amp;jpgq=90&amp;sp=68&amp;sigh=5IVTd08PoUxqB8wkUIpFqiC2Nnc" alt=""></a></div>
+                    <div class="main-production-video__title">
+                      <p>The name for the video in a few lines</p>
+                    </div>
+                  </div>
+                  <div class="main-production-video__item">
+                    <div class="main-production-video__content"><a data-video-url="https://www.youtube.com/embed/dtzFfTTXEgs" href="#" class="main-production-video__modal"><img src="https://i.ytimg.com/vi/dtzFfTTXEgs/hqdefault.jpg?custom=true&amp;w=196&amp;h=110&amp;stc=true&amp;jpg444=true&amp;jpgq=90&amp;sp=68&amp;sigh=Qu5dqQ2BSOceS30PqpItk1GQ3cI" alt=""></a></div>
+                    <div class="main-production-video__title">
+                      <p>The name for the video in a few lines</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-page-slider__item">
+            <div class="main-page-content">
+              <div class="row hr-mobile"></div>
+              <div class="main-page-wrap">
+                <div class="page-title">NEWS & EVENTS</div>
+                <div class="main-news-slider-mobile">
+                  <div class="main-news-slider-mobile__item"><img src="/img/main-news__slider-big.jpg" alt="">
+                    <div class="main-news-slider-mobile__item-content">
+                      <div class="main-news-slider-mobile__item-title">Promo START</div>
+                      <p>Conveniently, the raws divided into main raw additional </p>
+                    </div>
+                  </div>
+                  <div class="main-news-slider-mobile__item"><img src="/img/main-news__slider-big.jpg" alt="">
+                    <div class="main-news-slider-mobile__item-content">
+                      <div class="main-news-slider-mobile__item-title">Promo START</div>
+                      <p>Conveniently, the raws divided into main raw additional </p>
+                    </div>
+                  </div>
+                  <div class="main-news-slider-mobile__item"><img src="/img/main-news__slider-big.jpg" alt="">
+                    <div class="main-news-slider-mobile__item-content">
+                      <div class="main-news-slider-mobile__item-title">Promo START</div>
+                      <p>Conveniently, the raws divided into main raw additional</p>
+                    </div>
+                  </div>
+                </div>
+                <ul class="tabs tabs--horizontal tabs--main-news">
+                  <li class="tabs__item"><a href="#tab1" class="tabs__link active">ALL</a></li>
+                  <li class="tabs__item"><a href="#tab2" class="tabs__link">NEWS</a></li>
+                  <li class="tabs__item"><a href="#tab3" class="tabs__link">EVENTS</a></li>
+                  <li class="tabs__item"><a href="#tab4" class="tabs__link">ARCTICLES</a></li>
+                  <li class="tabs__item"><a href="#tab5" class="tabs__link">PROMO</a></li>
+                  <li class="tabs__item"><a href="#tab6" class="tabs__link">EXHIBITION</a></li>
+                </ul>
+                <div id="tab1" class="main-news active">
+                  <div class="main-news-item main-news-slider">
+                    <div class="main-news-slider__item">
+                      <div style="background-image: url('/img/main-news__slider.jpg')" class="main-news-slider__item-image"></div>
+                      <div class="main-news-slider__item-content">
+                        <div class="main-news-slider__item-title">Promo START</div>
+                        <p>Conveniently, the raws divided into main raw additional </p>
+                      </div>
+                    </div>
+                    <div class="main-news-slider__item">
+                      <div style="background-image: url('/img/main-news__slider.jpg')" class="main-news-slider__item-image"></div>
+                      <div class="main-news-slider__item-content">
+                        <div class="main-news-slider__item-title">Promo START</div>
+                        <p>Conveniently, the raws divided into main raw additional </p>
+                      </div>
+                    </div>
+                    <div class="main-news-slider__item">
+                      <div style="background-image: url('/img/main-news__slider.jpg')" class="main-news-slider__item-image"></div>
+                      <div class="main-news-slider__item-content">
+                        <div class="main-news-slider__item-title">Promo START</div>
+                        <p>Conveniently, the raws divided into main raw additional</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-news-item"><img src="/img/main-news__item-1.jpg" alt="" class="main-news-item__image">
+                    <div class="main-news-item__content">
+                      <div class="main-news-item__text">
+                        <p>Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!</p>
+                      </div>
+                      <div class="main-news-item__info"><span class="main-news-item__info--category">News</span><span class="main-news-item__info--date">22 August, 2016</span></div>
+                    </div>
+                  </div>
+                  <div class="main-news-item"><img src="/img/main-news__item-2.jpg" alt="" class="main-news-item__image">
+                    <div class="main-news-item__content">
+                      <div class="main-news-item__text">
+                        <p>International Construction and Interior Exhibition BATIMAT RUSSIA 2016!</p>
+                      </div>
+                      <div class="main-news-item__info"><span class="main-news-item__info--category">News</span><span class="main-news-item__info--date">22 August, 2016</span></div>
+                    </div>
+                  </div>
+                  <div class="main-news-item"><img src="/img/main-news__item-3.jpg" alt="" class="main-news-item__image">
+                    <div class="main-news-item__content">
+                      <div class="main-news-item__text">
+                        <p>International Construction and Interior Exhibition BATIMAT RUSSIA 2016!</p>
+                      </div>
+                      <div class="main-news-item__info"><span class="main-news-item__info--category">News</span><span class="main-news-item__info--date">22 August, 2016</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab2" class="main-news">
+                  <div class="main-news-item"><img src="/img/main-news__item-3.jpg" alt="" class="main-news-item__image">
+                    <div class="main-news-item__content">
+                      <div class="main-news-item__text">
+                        <p>International Construction and Interior Exhibition BATIMAT RUSSIA 2016!</p>
+                      </div>
+                      <div class="main-news-item__info"><span class="main-news-item__info--category">News</span><span class="main-news-item__info--date">22 August, 2016		</span></div>
+                    </div>
+                  </div>
+                  <div class="main-news-item"><img src="/img/main-news__item-1.jpg" alt="" class="main-news-item__image">
+                    <div class="main-news-item__content">
+                      <div class="main-news-item__text">
+                        <p>Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!</p>
+                      </div>
+                      <div class="main-news-item__info"><span class="main-news-item__info--category">News</span><span class="main-news-item__info--date">22 August, 2016</span></div>
+                    </div>
+                  </div>
+                  <div class="main-news-item"><img src="/img/main-news__item-2.jpg" alt="" class="main-news-item__image">
+                    <div class="main-news-item__content">
+                      <div class="main-news-item__text">
+                        <p>International Construction and Interior Exhibition BATIMAT RUSSIA 2016!</p>
+                      </div>
+                      <div class="main-news-item__info"><span class="main-news-item__info--category">News</span><span class="main-news-item__info--date">22 August, 2016	</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab3" class="main-news">
+                  <div class="main-news-item"><img src="/img/main-news__item-3.jpg" alt="" class="main-news-item__image">
+                    <div class="main-news-item__content">
+                      <div class="main-news-item__text">
+                        <p>International Construction and Interior Exhibition BATIMAT RUSSIA 2016!</p>
+                      </div>
+                      <div class="main-news-item__info"><span class="main-news-item__info--category">News</span><span class="main-news-item__info--date">22 August, 2016				</span></div>
+                    </div>
+                  </div>
+                  <div class="main-news-item"><img src="/img/main-news__item-2.jpg" alt="" class="main-news-item__image">
+                    <div class="main-news-item__content">
+                      <div class="main-news-item__text">
+                        <p>International Construction and Interior Exhibition BATIMAT RUSSIA 2016!</p>
+                      </div>
+                      <div class="main-news-item__info"><span class="main-news-item__info--category">News</span><span class="main-news-item__info--date">22 August, 2016	</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab4" class="main-news">
+                  <div class="main-news-item"><img src="/img/main-news__item-1.jpg" alt="" class="main-news-item__image">
+                    <div class="main-news-item__content">
+                      <div class="main-news-item__text">
+                        <p>Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!</p>
+                      </div>
+                      <div class="main-news-item__info"><span class="main-news-item__info--category">News</span><span class="main-news-item__info--date">22 August, 2016</span></div>
+                    </div>
+                  </div>
+                  <div class="main-news-item"><img src="/img/main-news__item-2.jpg" alt="" class="main-news-item__image">
+                    <div class="main-news-item__content">
+                      <div class="main-news-item__text">
+                        <p>International Construction and Interior Exhibition BATIMAT RUSSIA 2016!</p>
+                      </div>
+                      <div class="main-news-item__info"><span class="main-news-item__info--category">News</span><span class="main-news-item__info--date">22 August, 2016</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab5" class="main-news">
+                  <p>Not results</p>
+                </div>
+                <div id="tab6" class="main-news">
+                  <p>Not results</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-bottom-nav"><a href="#" class="main-bottom-nav__all-items btn--arrow-right">SEE ALL</a>
+              <div class="main-bottom-nav__arrows">
+                <button data-action="prev" class="main-news-nav main-bottom-nav__arrows--left"></button>
+                <button data-action="next" class="main-news-nav main-bottom-nav__arrows--right"></button>
+              </div>
+            </div>
+          </div>
+          <div class="main-page-slider__item">
+            <div class="main-page-content">
+              <div class="row main-about">
+                <div class="col-md-5 col-xs-12">
+                  <div class="page-title">ESTIMA COMAPNY</div>
+                  <p>Our company - the undisputed leader in terms of manufactured porcelain, and the widest range of products. The variety of colors and textures will surprise even the most demanding customers.</p>
+                  <p>Here you can buy granite profitable wholesale, the price offered by the tile is the most profitable in Moscow. In the presence more than 30 collections available, which will allow you to select the granite, the size of which can be found the electronic catalog.</p>
+                  <p>The product range constantly updated and expanded to meet the diverse needs and requirements of our customers. Modern finishes will serve for many years, it does not need special care always will delight the eyes of the original texture and exquisite design.</p><a href="#" class="btn--arrow-right">READ MORE</a>
+                </div>
+                <div class="col-md-6 col-md-offset-1 col-xs-12">
+                  <div class="main-about-news">
+                    <div class="main-about-news-item">
+                      <div style="background-image: url('/img/about-1.jpg')" class="main-about-news-item__bg"></div>
+                      <div class="main-about-news-item__title">
+                        <p>10 years</p>
+                      </div>
+                      <div class="main-about-news-item__content">
+                        <p>Company Estima - a recognized domestic leader he production of porcelain . We are the first manufacturer has organized the production of this material in our country.</p>
+                      </div><a href="#" class="main-about-news-item__link btn--arrow-right">READ MORE</a>
+                    </div>
+                    <div class="main-about-news-item">
+                      <div style="background-image: url('/img/about-2.jpg')" class="main-about-news-item__bg"></div>
+                      <div class="main-about-news-item__title">
+                        <p>( WE Green )</p>
+                      </div>
+                      <div class="main-about-news-item__content">
+                        <p>Production of ceramic granite  ESTIMA® meets «green trend». Raw materials from which the granite and the final product is very environmentally friendly and hygienically safe.</p>
+                      </div><a href="#" class="main-about-news-item__link btn--arrow-right">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-page-slider__item">
+            <div class="main-page-content">
+              <div class="main-contacts">
+                <div class="page-title page-title--bg">OFFICES</div>
+                <div class="row main-contacts__map">
+                  <div class="page-title page-title--bg">OFFICES</div><img src="/img/bg__main--contacts.jpg" alt="">
+                </div>
+                <div class="main-contacts-offices">
+                  <div class="main-contacts-offices__item">
+                    <div class="main-contacts-offices__title">Central office</div>
+                    <div class="main-contacts-offices__address">Mocsow, Nauchniy proezd 14A </div><a href="#" class="main-contacts-offices__link-map btn--arrow-right">SHOW MAP</a>
+                  </div>
+                  <div class="main-contacts-offices__item">
+                    <div class="main-contacts-offices__title">Product facility</div>
+                    <div class="main-contacts-offices__address">Noginsk, Betonnays str. 1</div><a href="#" class="main-contacts-offices__link-map btn--arrow-right">SHOW MAP</a>
+                  </div>
+                  <div class="main-contacts-offices__item">
+                    <div class="main-contacts-offices__title">Product facility</div>
+                    <div class="main-contacts-offices__address">Samara, Mehanikov str. 20 </div><a href="#" class="main-contacts-offices__link-map btn--arrow-right">SHOW MAP</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-page-slider__item">
+            <div class="main-page-content">
+              <div class="row hr-mobile"></div>
+              <div class="main-portfolio">
+                <div class="page-title-wrap">
+                  <div class="page-title">PORTFOLIO</div>
+                  <form class="subscribe">
+                    <input type="text" placeholder="Subscribe" class="subscribe__input">
+                    <input type="submit" value="" class="subscribe__button">
+                  </form>
+                </div>
+                <div class="main-portfolio-slider">
+                  <div class="main-portfolio-slider__item">
+                    <div class="main-portfolio-slider__image"><img src="/img/portfolio-1.jpg" alt="">
+                      <div class="main-portfolio-slider__desc">
+                        <div class="main-portfolio-slider__title">Project name on this site in two rows</div>
+                        <div class="main-portfolio-slider__text">It is ironic, but the artificial stone products are stronger and more durable natural, because on the surface of the material does not form chips, cracks and haze typical of natural granite.</div>
+                        <div><a href="#" class="btn--arrow-right">LEARN MORE</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-portfolio-slider__item">
+                    <div class="main-portfolio-slider__image"><img src="/img/portfolio-2.jpg" alt="">
+                      <div class="main-portfolio-slider__desc">
+                        <div class="main-portfolio-slider__title">Project name on this site in two rows</div>
+                        <div class="main-portfolio-slider__text">It is ironic, but the artificial stone products are stronger and more durable natural, because on the surface of the material does not form chips, cracks and haze typical of natural granite.</div>
+                        <div><a href="#" class="btn--arrow-right">LEARN MORE</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-portfolio-slider__item">
+                    <div class="main-portfolio-slider__image"><img src="/img/portfolio-1.jpg" alt="">
+                      <div class="main-portfolio-slider__desc">
+                        <div class="main-portfolio-slider__title">Project name on this site in two rows</div>
+                        <div class="main-portfolio-slider__text">It is ironic, but the artificial stone products are stronger and more durable natural, because on the surface of the material does not form chips, cracks and haze typical of natural granite.</div>
+                        <div><a href="#" class="btn--arrow-right">LEARN MORE</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-portfolio-slider__item">
+                    <div class="main-portfolio-slider__image"><img src="/img/portfolio-2.jpg" alt="">
+                      <div class="main-portfolio-slider__desc">
+                        <div class="main-portfolio-slider__title">Project name on this site in two rows</div>
+                        <div class="main-portfolio-slider__text">It is ironic, but the artificial stone products are stronger and more durable natural, because on the surface of the material does not form chips, cracks and haze typical of natural granite.</div>
+                        <div><a href="#" class="btn--arrow-right">LEARN MORE</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-bottom-nav"><a href="#" class="main-bottom-nav__all-items btn--arrow-right">SEE ALL</a>
+              <div class="main-bottom-nav__arrows">
+                <button class="main-portfolio-slider--prev main-bottom-nav__arrows--left"></button>
+                <button class="main-portfolio-slider--next main-bottom-nav__arrows--right"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row menu-bottom-wrap">
+          <ul class="menu-bottom">
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Catalogue</a></li>
+            <li class="menu-bottom__sep"></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Documents</a></li>
+            <li class="menu-bottom__sep"></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Portfolio</a></li>
+            <li class="menu-bottom__sep"></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">News&Events</a></li>
+            <li class="menu-bottom__sep"></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">About</a></li>
+            <li class="menu-bottom__sep"></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="row scroll-up">
+          <button class="scroll-up__button"></button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer footer-main">
+      <div class="container">
+        <form class="subscribe">
+          <input type="text" placeholder="Subscribe" class="subscribe__input">
+          <input type="submit" value="" class="subscribe__button">
+        </form>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="copyright dark-theme">© Estima Company						</div>
+          </div>
+          <div class="col-xs-6 social text-right"><a href="#" class="social__item social__item--vk"></a><a href="#" class="social__item social__item--fb"></a><a href="#" class="social__item social__item--youtube"></a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="modal-hidden">
+    <div id="search-modal">
+      <div class="search-layout__form container">
+        <div class="box-modal_close"></div>
+        <form class="search-form">
+          <div class="search-form__title text-center">JUST TYPE AND PRESS 'ENTER'</div>
+          <input type="search" class="search-form__input text-center">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hidden">
+    <div id="main-menu-modal" class="main-menu-container">
+      <div class="container">
+        <div class="box-modal_close"></div>
+        <div class="row main-menu-layout">
+          <div class="col-sm-3 main-menu-layout__col">
+            <div class="row">
+              <ul class="main-menu-lvl-1">
+                <li class="main-menu-lvl-1__item"><a href="/" class="main-menu-lvl-1__link">Main page</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#catalog" class="main-menu-lvl-1__link main-menu-lvl-1__link--isChild">Catalogue</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">Documents</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">Portfolio</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">News&Events</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">About</a></li>
+                <li class="main-menu-lvl-1__item"><a href="/contacts.html" class="main-menu-lvl-1__link">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 main-menu-layout__col">
+            <div class="row">
+              <ul id="catalog" class="main-menu-lvl-2">
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Marble</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Stone</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Wood</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Cement</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Design</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Commercial</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Vertical</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Ceramic tile</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Decoration</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 main-menu-layout__col">
+            <div class="main-menu-slider-wrap">
+              <div class="main-menu-slider"><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-2.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">LUX</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-2.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">LUX</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a></div>
+              <div class="main-menu-slider-nav"><a href="#" class="main-menu-slider-nav__link-all btn--arrow-right">SEE ALL</a>
+                <div class="main-menu-slider-nav__arrows catalog-slider__arrows">
+                  <button class="main-menu-slider-nav__arrows-left catalog-slider__arrows-left"></button>
+                  <button class="main-menu-slider-nav__arrows-right catalog-slider__arrows-right"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-bottom-nav__next-page animate">
+  </div>
+</body>

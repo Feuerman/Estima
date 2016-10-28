@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head></head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="vendor/slick/slick.css">
+<link rel="stylesheet" href="vendor/slick/slick-theme.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/common.js"></script>
+<div id="page-preloader"><span class="spinner"></span></div>
+<body>
+  <div class="inner-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="site-logo light-theme"><a href="/"></a></div>
+        <div class="header__panel">
+          <button class="icon icon__auth light-theme"></button>
+          <button data-target-modal="search-modal" class="icon icon__search light-theme btn-modal"></button>
+          <button class="select-language">rus</button>
+          <div class="main-menu-panel">
+            <button data-target-modal="main-menu-modal" class="main-menu-button light-theme btn-modal">menu<span class="main-menu-button-icon"></span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="inner-content">
+      <div class="container visible-xs">
+        <div class="row hr-mobile"></div>
+        <div class="page-title">OFFICES</div>
+      </div>
+      <div class="container visible-xs">
+        <select name="officesCategory" class="form-control contacts-offices-category">
+          <option value="Authorized dealers">Authorized dealers</option>
+          <option value="Branded salons">Branded salons</option>
+          <option value="Regional offices">Regional offices</option>
+        </select>
+      </div>
+      <div class="contacts-map">
+        <div class="contacts__title-wrap hidden-xs">
+          <div class="container">
+            <div class="page-title contacts__title">OFFICES</div>
+          </div>
+        </div><img src="/img/bg__main--contacts.jpg" alt="">
+      </div>
+      <div class="contacts-panel hidden-xs">
+        <div class="container">
+          <div class="contacts-panel__col pull-left">
+            <button class="btn-br btn-br--blue">Authorized dealers</button>
+            <button class="btn-br btn-br--red">Branded salons</button>
+            <button class="btn-br btn-br--brown">Regional offices</button>
+          </div>
+          <div class="contacts-panel__col pull-right">
+            <div class="contacts-panel-input-wrap pull-right"><span class="text-right">Show worl map</span>
+              <div class="onoffswitch">
+                <input id="myonoffswitch" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox">
+                <label for="myonoffswitch" class="onoffswitch-label"><span class="onoffswitch-inner"></span><span class="onoffswitch-switch"></span></label>
+              </div><span class="text-left">Moscow subway</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <form class="contacts-search-form">
+          <input type="text" placeholder="Search by country, state and city " class="contacts-search-form__input">
+          <input type="submit" value="" class="contacts-search-form__submit icon icon__search light-theme">
+        </form>
+        <div class="contacts-offices">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="contacts-offices-item">
+                <div class="contacts-offices-item__title">Monarch</div>
+                <div class="contacts-offices-item__location">Russian Federation, Sochi </div>
+                <div class="contacts-offices-item__desc">
+                  <p>Gagarina str, 72</p>
+                  <p>Phone:  +7 (862) 200-1015</p>
+                  <p>E-mail: estima@estima.ru</p>
+                </div>
+                <div class="contacts-offices-item__panel"><a href="/contacts__cart.html" class="btn--arrow-right pull-left">DETAILS</a>
+                  <div class="btn-br btn-br--small btn-br--blue pull-right">Authorized dealers</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contacts-offices-item">
+                <div class="contacts-offices-item__title">Studio Estima Rusakovskays</div>
+                <div class="contacts-offices-item__location">Russian Federation, Moscow</div>
+                <div class="contacts-offices-item__desc">
+                  <p>107553, Rusakovskaya 25, stroenie 1</p>
+                  <p>Phone:  +7 (495) 775-6040</p>
+                  <p>E-mail: estima@estima.ru</p>
+                </div>
+                <div class="contacts-offices-item__panel"><a href="/contacts__cart.html" class="btn--arrow-right pull-left">DETAILS</a>
+                  <div class="btn-br btn-br--small btn-br--red pull-right">Branded salons</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contacts-offices-item">
+                <div class="contacts-offices-item__title">Central Office</div>
+                <div class="contacts-offices-item__location">Russian Federation, Moscow</div>
+                <div class="contacts-offices-item__desc">
+                  <p>117246, Nauchniy proezd 14A, stroenie 3</p>
+                  <p>Phone:  +7 (495) 775-6040</p>
+                  <p>E-mail: estima@estima.ru</p>
+                </div>
+                <div class="contacts-offices-item__panel"><a href="/contacts__cart.html" class="btn--arrow-right pull-left">DETAILS</a>
+                  <div class="btn-br btn-br--small btn-br--blue pull-right">Authorized dealers</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contacts-offices-item">
+                <div class="contacts-offices-item__title">Studio Estima Rusakovskays</div>
+                <div class="contacts-offices-item__location">Russian Federation, Moscow</div>
+                <div class="contacts-offices-item__desc">
+                  <p>107553, Rusakovskaya 25, stroenie 1</p>
+                  <p>Phone:  +7 (495) 775-6040</p>
+                  <p>E-mail: estima@estima.ru</p>
+                </div>
+                <div class="contacts-offices-item__panel"><a href="/contacts__cart.html" class="btn--arrow-right pull-left">DETAILS</a>
+                  <div class="btn-br btn-br--small btn-br--red pull-right">Branded salons</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contacts-offices-item">
+                <div class="contacts-offices-item__title">Central Office</div>
+                <div class="contacts-offices-item__location">Russian Federation, Moscow</div>
+                <div class="contacts-offices-item__desc">
+                  <p>117246, Nauchniy proezd 14A, stroenie 3</p>
+                  <p>Phone:  +7 (495) 775-6040</p>
+                  <p>E-mail: estima@estima.ru</p>
+                </div>
+                <div class="contacts-offices-item__panel"><a href="/contacts__cart.html" class="btn--arrow-right pull-left">DETAILS</a>
+                  <div class="btn-br btn-br--small btn-br--blue pull-right">Authorized dealers</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contacts-offices-item">
+                <div class="contacts-offices-item__title">Central Office</div>
+                <div class="contacts-offices-item__location">Russian Federation, Moscow</div>
+                <div class="contacts-offices-item__desc">
+                  <p>117246, Nauchniy proezd 14A, stroenie 3</p>
+                  <p>Phone:  +7 (495) 775-6040</p>
+                  <p>E-mail: estima@estima.ru</p>
+                </div>
+                <div class="contacts-offices-item__panel"><a href="/contacts__cart.html" class="btn--arrow-right pull-left">DETAILS</a>
+                  <div class="btn-br btn-br--small btn-br--blue pull-right">Authorized dealers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container text-center">
+            <button class="btn--show-more">Show more</button>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-form-wrap">
+        <div class="container">
+          <div class="row">
+            <form class="contacts-form">
+              <div class="contacts-form__title text-center">Contact Us</div>
+              <div class="contacts-form__row">
+                <div class="col-sm-4 col-xs-12">
+                  <input type="text" placeholder="Alex Klopkol" class="contacts-form__input">
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                  <input type="text" placeholder="Phone number" class="contacts-form__input">
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                  <input type="text" placeholder="E-mail address" class="contacts-form__input">
+                </div>
+              </div>
+              <div class="contacts-form__row col-xs-12">
+                <textarea name="" cols="30" rows="2" placeholder="Message" class="contacts-form__input"></textarea>
+              </div>
+              <div class="contacts-form__row text-center">
+                <input type="submit" value="SEND" class="contacts-form__submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="menu-bottom-inner-wrap hidden-xs">
+        <div class="container">
+          <div class="row">
+            <ul class="menu-bottom menu-bottom-inner">
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Catalogue</a></li>
+              <li class="menu-bottom__sep"></li>
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Documents</a></li>
+              <li class="menu-bottom__sep"></li>
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Portfolio</a></li>
+              <li class="menu-bottom__sep"></li>
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">News&Events</a></li>
+              <li class="menu-bottom__sep"></li>
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">About</a></li>
+              <li class="menu-bottom__sep"></li>
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer-inner"> 
+        <div class="container">
+          <form class="subscribe">
+            <input type="text" placeholder="Subscribe" class="subscribe__input">
+            <input type="submit" value="" class="subscribe__button">
+          </form>
+          <div class="row">
+            <div class="col-xs-6 copyright light-theme">© Estima Company						</div>
+            <div class="col-xs-6 social text-right"><a href="#" class="social__item social__item--vk"></a><a href="#" class="social__item social__item--fb"></a><a href="#" class="social__item social__item--youtube"></a></div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </div>
+  <div class="modal-hidden">
+    <div id="search-modal">
+      <div class="search-layout__form container">
+        <div class="box-modal_close"></div>
+        <form class="search-form">
+          <div class="search-form__title text-center">JUST TYPE AND PRESS 'ENTER'</div>
+          <input type="search" class="search-form__input text-center">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hidden">
+    <div id="main-menu-modal" class="main-menu-container">
+      <div class="container">
+        <div class="box-modal_close"></div>
+        <div class="row main-menu-layout">
+          <div class="col-sm-3 main-menu-layout__col">
+            <div class="row">
+              <ul class="main-menu-lvl-1">
+                <li class="main-menu-lvl-1__item"><a href="/" class="main-menu-lvl-1__link">Main page</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#catalog" class="main-menu-lvl-1__link main-menu-lvl-1__link--isChild">Catalogue</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">Documents</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">Portfolio</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">News&Events</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">About</a></li>
+                <li class="main-menu-lvl-1__item"><a href="/contacts.html" class="main-menu-lvl-1__link">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 main-menu-layout__col">
+            <div class="row">
+              <ul id="catalog" class="main-menu-lvl-2">
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Marble</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Stone</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Wood</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Cement</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Design</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Commercial</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Vertical</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Ceramic tile</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Decoration</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 main-menu-layout__col">
+            <div class="main-menu-slider-wrap">
+              <div class="main-menu-slider"><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-2.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">LUX</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-2.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">LUX</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a></div>
+              <div class="main-menu-slider-nav"><a href="#" class="main-menu-slider-nav__link-all btn--arrow-right">SEE ALL</a>
+                <div class="main-menu-slider-nav__arrows catalog-slider__arrows">
+                  <button class="main-menu-slider-nav__arrows-left catalog-slider__arrows-left"></button>
+                  <button class="main-menu-slider-nav__arrows-right catalog-slider__arrows-right"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

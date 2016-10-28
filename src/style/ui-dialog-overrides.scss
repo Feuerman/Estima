@@ -1,0 +1,49 @@
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+	border-radius: 0;
+}
+.ui-widget.ui-widget-content {
+	overflow-y: scroll;
+	border: none;
+	z-index: 500;
+}
+.ui-widget-content {
+	height: 100%!important;
+}
+.ui-dialog {
+	position: absolute!important;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);	
+}
+.ui-dialog, .ui-dialog-content {
+	padding: 0!important;
+}
+.ui-widget-header {
+	display: none;
+}
+
+.search-layout__form {
+	display: table;
+	height: 100%;
+}
+.search-form {	
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.ui-dialog .container {
+	position: relative;
+}
+
+.ui-dialog .box-modal_close {
+	display: block;
+	right: 15px;
+}
+.ui-widget-content  {
+	width: 100%!important;
+}
+.ui-widget-content a {
+	color: rgb(255, 255, 255);
+}
+.ui-widget-content .btn--arrow-right {
+	color: rgb(225, 0, 26);
+}

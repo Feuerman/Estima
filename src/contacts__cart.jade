@@ -1,0 +1,193 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content
+				.contacts-cart__header
+					.container
+						.contacts-cart__title Estima studio in Ufa
+						.contacts-cart__geo Russian Federation / Regional
+						.share-panel
+				.container
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/") Main
+						li.breadcrumbs__sep
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/contacts.html") Contacts
+						li.breadcrumbs__sep
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Russia
+						li.breadcrumbs__sep
+						li.breadcrumbs__item
+							span Ufa
+					.contacts-cart-content.row
+						.col-md-8.col-sm-6
+							h2 Overview
+							p Ceramics Studio ESTIMA Ufa invites you to visit. In a friendly and relaxed atmosphere you can get acquainted in detail with our products: see samples, order 3d design project and receive quality advice from professionals.
+							.contacts-cart-info
+								.contacts-cart-info__row
+									.contacts-cart-info__title
+										span.icon__address
+										p Address:
+									.contacts-cart-info__text Ufa, Komsomolskaya str 15
+								.contacts-cart-info__row
+									.contacts-cart-info__title
+										span.icon__clock
+										p Work time:
+									.contacts-cart-info__text 10:00 - 18:00 from Monday till Friday
+								.contacts-cart-info__row
+									.contacts-cart-info__title
+										span.icon__mail
+										p E-mail:
+									.contacts-cart-info__text 
+										a(href="mailto:salon-ufa@estima.ru") salon-ufa@estima.ru
+								.contacts-cart-info__row
+									.contacts-cart-info__title
+										span.icon__phone
+										p Phone
+									.contacts-cart-info__text +7(967) 456-34-78
+						.col-md-4.col-sm-6
+							.cart-slider
+								.cart-slider__item
+									img.cart-slider__image(src="/img/cart-example-1.jpg", alt="")
+									button.link-image-modal
+								.cart-slider__item
+									img.cart-slider__image(src="/img/cart-example-1.jpg", alt="")
+									button.link-image-modal
+								.cart-slider__item
+									img.cart-slider__image(src="/img/cart-example-1.jpg", alt="")
+									button.link-image-modal
+								.cart-slider__item
+									img.cart-slider__image(src="/img/cart-example-1.jpg", alt="")
+									button.link-image-modal
+							.cart-slider-nav
+								.cart-slider-thumb
+									.cart-slider-thumb__item
+										img.cart-slider-thumb__image(src="/img/cart-example-small-1.jpg", alt="")
+									.cart-slider-thumb__item
+										img.cart-slider-thumb__image(src="/img/cart-example-small-2.jpg", alt="")
+									.cart-slider-thumb__item
+										img.cart-slider-thumb__image(src="/img/cart-example-small-3.jpg", alt="")
+									.cart-slider-thumb__item
+										img.cart-slider-thumb__image(src="/img/cart-example-small-1.jpg", alt="")
+								.main-bottom-nav__arrows.pull-right
+									button.cart-slider--prev.main-bottom-nav__arrows--left
+									button.cart-slider--next.main-bottom-nav__arrows--right
+					.hr
+					.contacts-cart-params.text-center
+						.col-sm-3.contacts-cart-params__item
+							.contacts-cart-params__image
+								img(src="/img/icon__3d-model.png", alt="")
+							p 3D Design model as a gift
+						.col-sm-3.contacts-cart-params__item
+							.contacts-cart-params__image
+								img(src="/img/icon__showroom.png", alt="")
+							p Showroom
+						.col-sm-3.contacts-cart-params__item
+							.contacts-cart-params__image
+								img(src="/img/icon__conditions.png", alt="")
+							p Favorable conditions for designers
+						.col-sm-3.contacts-cart-params__item
+							.contacts-cart-params__image
+								img(src="/img/icon__payment.png", alt="")
+							p Instant payment
+				.container.visible-xs
+					select.form-control.contacts-offices-category(name="officesCategory")
+						option(value="Authorized dealers") Authorized dealers
+						option(value="Branded salons") Branded salons
+						option(value="Regional offices") Regional offices
+				.contacts-map
+					.contacts__title-wrap.hidden-xs
+						.container
+							.page-title.contacts__title Other contacts in Ufa
+					img(src="/img/map-cart.jpg", alt="")
+				.contacts-panel.hidden-xs
+					.container
+						.contacts-panel__col.pull-left
+							button.btn-br.btn-br--blue Authorized dealers
+							button.btn-br.btn-br--red Branded salons
+							button.btn-br.btn-br--brown Regional offices
+						.contacts-panel__col.pull-right
+							.contacts-panel-input-wrap.pull-right
+								span.text-right Show worl map
+								.onoffswitch
+									input#myonoffswitch.onoffswitch-checkbox(type='checkbox', name='onoffswitch')
+									label.onoffswitch-label(for='myonoffswitch')
+										span.onoffswitch-inner
+										span.onoffswitch-switch
+								span.text-left Moscow subway
+				.container
+					.contacts-offices
+						.row
+							.col-md-4.col-sm-6
+								.contacts-offices-item
+									.contacts-offices-item__title Monarch
+									.contacts-offices-item__location Russian Federation, Sochi 
+									.contacts-offices-item__desc
+										p Gagarina str, 72
+										p Phone:  +7 (862) 200-1015
+										p E-mail: estima@estima.ru
+									.contacts-offices-item__panel
+										a.btn--arrow-right.pull-left(href="#") DETAILS
+										.btn-br.btn-br--small.btn-br--blue.pull-right Authorized dealers
+							.col-md-4.col-sm-6
+								.contacts-offices-item
+									.contacts-offices-item__title Studio Estima Rusakovskays
+									.contacts-offices-item__location Russian Federation, Moscow
+									.contacts-offices-item__desc
+										p 107553, Rusakovskaya 25, stroenie 1
+										p Phone:  +7 (495) 775-6040
+										p E-mail: estima@estima.ru
+									.contacts-offices-item__panel
+										a.btn--arrow-right.pull-left(href="#") DETAILS
+										.btn-br.btn-br--small.btn-br--red.pull-right Branded salons
+							.col-md-4.col-sm-6
+								.contacts-offices-item
+									.contacts-offices-item__title Central Office
+									.contacts-offices-item__location Russian Federation, Moscow
+									.contacts-offices-item__desc
+										p 117246, Nauchniy proezd 14A, stroenie 3
+										p Phone:  +7 (495) 775-6040
+										p E-mail: estima@estima.ru
+									.contacts-offices-item__panel
+										a.btn--arrow-right.pull-left(href="#") DETAILS
+										.btn-br.btn-br--small.btn-br--blue.pull-right Authorized dealers
+				.contacts-cart-nav
+					.contacts-cart-nav__line.hidden-xs
+					.container
+						.col-sm-6.text-center
+							a(href="#").contacts-cart-nav__item.contacts-cart-nav__item--prev
+								| Monarch, Russia, Sochi
+								br
+								span Previous
+						.col-sm-6.text-center
+							a(href="#").contacts-cart-nav__item.contacts-cart-nav__item--next
+								| Central Office, Russia, Moscow
+								br
+								span Next
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				include templates/footer-inner.jade	
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade

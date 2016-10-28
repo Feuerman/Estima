@@ -1,0 +1,302 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content
+				.catalog-header
+					.container
+						.catalog-header__title Catalogue
+						button.catalog-header__current-category.visible-xs Marble
+						ul.catalog-header-menu.list-inline
+							li.catalog-header-menu__item.active
+								a.catalog-header-menu__link.active(href="#") Marble
+							li.catalog-header-menu__item
+								a.catalog-header-menu__link(href="#") Vertical
+							li.catalog-header-menu__item
+								a.catalog-header-menu__link(href="#") Wood
+							li.catalog-header-menu__item
+								a.catalog-header-menu__link(href="#") Design
+							li.catalog-header-menu__item
+								a.catalog-header-menu__link(href="#") Decoration
+							li.catalog-header-menu__item
+								a.catalog-header-menu__link(href="#") Cement
+							li.catalog-header-menu__item
+								a.catalog-header-menu__link(href="#") Stone
+							li.catalog-header-menu__item
+								a.catalog-header-menu__link(href="#") Commercial
+							li.catalog-header-menu__item
+								a.catalog-header-menu__link(href="#") Ceramic tile
+				.container
+					.catalog__title Marble
+				.catalog-filter-mobile.visible-xs
+					.container 
+						button.catalog-filter-mobile__button Open filtrer
+				.container
+					.catalog-filter
+						.catalog-filter-item
+							span 
+								| Size
+								i.catalog-filter-item-arrow
+							.catalog-filter-item__sub
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-1" value="Street")
+									label(for="area-1") Street
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-2" value="Lobby")
+									label(for="area-2") Lobby
+						.catalog-filter-item
+							span 
+								| Type
+								i.catalog-filter-item-arrow
+							.catalog-filter-item__sub
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-1" value="Street")
+									label(for="area-1") Street
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-2" value="Lobby")
+									label(for="area-2") Lobby									
+						.catalog-filter-item
+							span 
+								| Area of application
+								i.catalog-filter-item-arrow
+							.catalog-filter-item__sub
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-1" value="Street")
+									label(for="area-1") Street
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-2" value="Lobby")
+									label(for="area-2") Lobby	
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-3" value="Porch")
+									label(for="area-3") Porch	
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-4" value="Patio")
+									label(for="area-4") Patio	
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-5" value="Kitchen")
+									label(for="area-5") Kitchen	
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-6" value="Balcony")
+									label(for="area-6") Balcony	
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-7" value="Launge")
+									label(for="area-7") Launge	
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-8" value="Dwelling")
+									label(for="area-8") Dwelling
+						.catalog-filter-item
+							span 
+								| Color
+								i.catalog-filter-item-arrow
+							.catalog-filter-item__sub
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-1" value="Street")
+									label(for="area-1") Street
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-2" value="Lobby")
+									label(for="area-2") Lobby
+						.catalog-filter-item
+							span 
+								| Surface type
+								i.catalog-filter-item-arrow
+							.catalog-filter-item__sub
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-1" value="Street")
+									label(for="area-1") Street
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-2" value="Lobby")
+									label(for="area-2") Lobby
+						.catalog-filter-item
+							span 
+								| Shape
+								i.catalog-filter-item-arrow
+							.catalog-filter-item__sub
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-1" value="Street")
+									label(for="area-1") Street
+								.catalog-filter-item__checkbox
+									input(type="checkbox" id="area-2" value="Lobby")
+									label(for="area-2") Lobby					
+				.container
+					.row.catalog-tizers
+						.col-md-4.col-sm-6.catalog-tizers__item
+							img.img-responsive.catalog-tizers__image(src="img/catalog-1.jpg", alt="")
+							span.catalog-tizers__title BOLERO
+							.catalog-tizers-popup.hidden-xs
+								.catalog-tizers-popup__image
+									img.img-responsive(src="img/catalog-1.jpg", alt="")
+									span.catalog-tizers__title BOLERO
+								.catalog-tizers-sample
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-1.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-2.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-3.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-4.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-5.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-6.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-7.jpg", alt="")
+								a.catalog-tizers-link(href="/catalog-model.html")
+									span.btn--arrow-right.btn--arrow-right-white LEARN MORE
+						.col-md-4.col-sm-6.catalog-tizers__item
+							img.img-responsive.catalog-tizers__image(src="img/catalog-2.jpg", alt="")
+							span.catalog-tizers__title CAPRI
+							.catalog-tizers-popup.hidden-xs
+								.catalog-tizers-popup__image
+									img.img-responsive(src="img/catalog-2.jpg", alt="")
+									span.catalog-tizers__title CAPRI
+								.catalog-tizers-sample
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-1.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-2.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-3.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-4.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-5.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-6.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-7.jpg", alt="")
+								a.catalog-tizers-link(href="/catalog-model.html")
+									span.btn--arrow-right.btn--arrow-right-white LEARN MORE
+						.col-md-4.col-sm-6.catalog-tizers__item
+							img.img-responsive.catalog-tizers__image(src="img/catalog-3.jpg", alt="")
+							span.catalog-tizers__title DREAM
+							.catalog-tizers-popup.hidden-xs
+								.catalog-tizers-popup__image
+									img.img-responsive(src="img/catalog-3.jpg", alt="")
+									span.catalog-tizers__title DREAM
+								.catalog-tizers-sample
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-1.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-2.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-3.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-4.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-5.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-6.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-7.jpg", alt="")
+								a.catalog-tizers-link(href="/catalog-model.html")
+									span.btn--arrow-right.btn--arrow-right-white LEARN MORE
+						.col-md-4.col-sm-6.catalog-tizers__item
+							img.img-responsive.catalog-tizers__image(src="img/catalog-4.jpg", alt="")
+							span.catalog-tizers__title POLARIS
+							.catalog-tizers-popup.hidden-xs
+								.catalog-tizers-popup__image
+									img.img-responsive(src="img/catalog-4.jpg", alt="")
+									span.catalog-tizers__title POLARIS
+								.catalog-tizers-sample
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-1.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-2.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-3.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-4.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-5.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-6.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-7.jpg", alt="")
+								a.catalog-tizers-link(href="/catalog-model.html")
+									span.btn--arrow-right.btn--arrow-right-white LEARN MORE
+						.col-md-4.col-sm-6.catalog-tizers__item
+							img.img-responsive.catalog-tizers__image(src="img/catalog-5.jpg", alt="")
+							span.catalog-tizers__title ELEGANT
+							.catalog-tizers-popup.hidden-xs
+								.catalog-tizers-popup__image
+									img.img-responsive(src="img/catalog-5.jpg", alt="")
+									span.catalog-tizers__title ELEGANT
+								.catalog-tizers-sample
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-1.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-2.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-3.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-4.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-5.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-6.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-7.jpg", alt="")
+								a.catalog-tizers-link(href="/catalog-model.html")
+									span.btn--arrow-right.btn--arrow-right-white LEARN MORE
+						.col-md-4.col-sm-6.catalog-tizers__item
+							img.img-responsive.catalog-tizers__image(src="img/catalog-6.jpg", alt="")
+							span.catalog-tizers__title LATTE
+							.catalog-tizers-popup.hidden-xs
+								.catalog-tizers-popup__image
+									img.img-responsive(src="img/catalog-6.jpg", alt="")
+									span.catalog-tizers__title LATTE
+								.catalog-tizers-sample
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-1.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-2.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-3.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-4.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-5.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-6.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-7.jpg", alt="")
+								a.catalog-tizers-link(href="/catalog-model.html")
+									span.btn--arrow-right.btn--arrow-right-white LEARN MORE
+						.col-md-4.col-sm-6.catalog-tizers__item
+							img.img-responsive.catalog-tizers__image(src="img/catalog-7.jpg", alt="")
+							span.catalog-tizers__title PALACE
+							.catalog-tizers-popup.hidden-xs
+								.catalog-tizers-popup__image
+									img.img-responsive(src="img/catalog-7.jpg", alt="")
+									span.catalog-tizers__title PALACE
+								.catalog-tizers-sample
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-1.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-2.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-3.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-4.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-5.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-6.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-7.jpg", alt="")
+								a.catalog-tizers-link(href="/catalog-model.html")
+									span.btn--arrow-right.btn--arrow-right-white LEARN MORE
+						.col-md-4.col-sm-6.catalog-tizers__item
+							img.img-responsive.catalog-tizers__image(src="img/catalog-8.jpg", alt="")
+							span.catalog-tizers__title PLATINUM
+							.catalog-tizers-popup.hidden-xs
+								.catalog-tizers-popup__image
+									img.img-responsive(src="img/catalog-8.jpg", alt="")
+									span.catalog-tizers__title PLATINUM
+								.catalog-tizers-sample
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-1.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-2.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-3.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-4.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-5.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-6.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-7.jpg", alt="")
+								a.catalog-tizers-link(href="/catalog-model.html")
+									span.btn--arrow-right.btn--arrow-right-white LEARN MORE
+						.col-md-4.col-sm-6.catalog-tizers__item
+							img.img-responsive.catalog-tizers__image(src="img/catalog-9.jpg", alt="")
+							span.catalog-tizers__title RICH
+							.catalog-tizers-popup.hidden-xs
+								.catalog-tizers-popup__image
+									img.img-responsive(src="img/catalog-1.jpg", alt="")
+									span.catalog-tizers__title RICH
+								.catalog-tizers-sample
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-1.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-2.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-3.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-4.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-5.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-6.jpg", alt="")
+									img.catalog-tizers-sample__image(src="/img/catalog-sample-7.jpg", alt="")
+								a.catalog-tizers-link(href="/catalog-model.html")
+									span.btn--arrow-right.btn--arrow-right-white LEARN MORE
+				.catalog-desc
+					.container
+						p.text-center Production of ESTIMA® ceramic granite complies in full with «green trends». Both raw materials used to produce ceramic granite and the nal product, are safe from ecology and hygienic standpoints. Productsunder ESTIMA® brand are manufactured out of natural raw materials developed from the open pits. 
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				include templates/footer-inner.jade	
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade

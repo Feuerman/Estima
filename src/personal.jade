@@ -1,0 +1,79 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content
+				.personal
+					.container
+						.personal__name Wellcome Alexey
+						.personal-panel
+							button.personal-menu-btn Profile
+							ul.personal-menu
+								li.personal-menu__item
+									a.personal-menu__link.active(href="#") profile
+								li.personal-menu__item
+									a.personal-menu__link(href="/personal-promo.html") Promo
+								li.personal-menu__item
+									a.personal-menu__link(href="/personal-documents.html") documents
+							button.personal__logout
+								| exit
+								i
+				.personal-form-wrap
+					.container
+						form.personal-form
+							.personal-form__title Profile details
+							.hr
+							.row
+								.col-md-4.col-sm-6
+									label(for="user-firstname") First name
+									input(type="text" id="user-firstname" name="firstname" value="Alexey")
+								.col-md-4.col-sm-6
+									label(for="user-lastname") Last name
+									input(type="text" id="user-lastname" name="lastname" value="Klopkov")
+								.col-md-4.col-sm-6
+									label(for="user-email") E-mail adress
+									input(type="text" id="user-email" name="email" value="mumijo@yandex.ru")
+								.col-md-4.col-sm-6
+									label(for="user-phone") Phone
+									input(type="text" id="user-phone" name="phone" value="+7 909 652 94 56")
+								.col-md-4.col-sm-6
+									label(for="user-city") City
+									input(type="text" id="user-city" name="city" value="Moscow")
+								.col-md-4.col-sm-6
+									label(for="user-company") Company
+									input(type="text" id="user-company" name="company" value="Art&Design")
+							.hr
+							.personal-form-bottom.row
+								.personal-form__submit
+									input(type="submit" value="SAVE")
+								.col-sm-6.text-left
+									.personal-form__subscribe
+										input(type="checkbox" id="user-subscribe")
+										label(for="user-subscribe") Suscribe on direct mail
+								.col-sm-6.text-right
+									a(href="#") Change password
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				include templates/footer-inner.jade	
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade

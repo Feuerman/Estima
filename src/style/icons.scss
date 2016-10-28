@@ -1,0 +1,204 @@
+.icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	&__auth {
+		margin-right: 35px;
+		width: 26px;
+		height: 26px;
+		&.dark-theme {
+			background-image: url('../img/icon__auth--white.png');
+		}
+		&.light-theme {
+			background-image: url('../img/icon__auth--black.png');
+		}	
+	}
+	&__search {
+		width: 23px;
+		height: 23px;
+		&.dark-theme {
+			background-image: url('../img/icon__search--white.png');
+		}
+		&.light-theme {
+			background-image: url('../img/icon__search--black.png');
+		}
+	}
+	&__marker {
+		display: inline-block;
+		width: 14px;
+		height: 19px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		&--blue {
+			background-image: url('../img/icon__marker--blue.png');
+		}
+		&--red {
+			background-image: url('../img/icon__marker--red.png');
+		}
+		&--brown {
+			background-image: url('../img/icon__marker--brown.png');
+		}
+	}
+	&__address {
+		display: inline-block;
+		width: 16px;
+		height: 21px;
+		background-position: center center;
+		background-repeat: no-repeat;
+    background-image: url('../img/icon__adddress--silver.png');
+	}
+	&__clock {
+    display: inline-block;
+    width: 19px;
+    height: 21px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../img/icon__clock--silver.png');
+	}	
+  &__mail {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../img/icon__mail--silver.png');
+  }  
+  &__phone {
+    display: inline-block;
+    width: 19px;
+    height: 21px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../img/icon__phone--silver.png');
+  }  
+}
+
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	//background: blue;
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+.mouse
+{
+height: 42px;
+width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid #444444;
+}
+
+.wheel
+{
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid black;
+  box-shadow: 0 0 1px 1px #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel
+{
+  -webkit-animation: mouse-wheel 0.8s linear infinite;
+  -moz-animation: mouse-wheel 0.8s linear infinite;
+}
+
+
+
+@-webkit-keyframes mouse-wheel
+{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel
+{
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('../img/spinner.gif') no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}

@@ -1,0 +1,80 @@
+include templates/head.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content
+				.personal-header
+					.container
+						.personal__name						
+						.personal-panel
+							ul.personal-menu
+								li.personal-menu__item
+									a.personal-menu__link.active(href="#") profile
+								li.personal-menu__item
+									a.personal-menu__link(href="#") Promo
+								li.personal-menu__item
+									a.personal-menu__link(href="#") documents
+							button.personal__logout exit
+						.personal-form
+							.personal-form__title
+							.hr
+							.col-md-4.col-sm-6
+								label(for="user-firstname") First name
+								input(type="text" id="user-firstname" name="firstname" value="Alexey")
+							.col-md-4.col-sm-6
+								label(for="user-lastname") Last name
+								input(type="text" id="user-lastname" name="lastname" value="Klopkov")
+							.col-md-4.col-sm-6
+								label(for="user-email") E-mail adress
+								input(type="text" id="user-email" name="email" value="mumijo@yandex.ru")
+							.col-md-4.col-sm-6
+								label(for="user-phone") Phone
+								input(type="text" id="user-phone" name="phone" value="+7 909 652 94 56")
+							.col-md-4.col-sm-6
+								label(for="user-city") City
+								input(type="text" id="user-city" name="city" value="Moscow")
+							.col-md-4.col-sm-6
+								label(for="user-company") Company
+								input(type="text" id="user-company" name="company" value="Art&Design")
+							.hr
+							.personal-form-bottom
+								.col-sm-4
+									label(for="user-subscribe") Suscribe on direct mail
+									input(type="checkbox" checked)
+								.col-sm-4
+									input(type="submit" value="SAVE")
+								.col-sm-4
+									a(href="#") Change password				
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				footer.footer.footer-inner
+					.container
+						.copyright.light-theme © Estima Company
+						form.subscribe
+							input.subscribe__input(type="text" placeholder="Subscribe")
+							input(type="submit" value="").subscribe__button
+						.social
+							a.social__item.social__item--vk(href="#")
+							a.social__item.social__item--fb(href="#")
+							a.social__item.social__item--youtube(href="#")
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade

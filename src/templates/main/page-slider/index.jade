@@ -1,0 +1,37 @@
+.main-page-slider__item
+	.main-page-bg__changeImage(style="background-image: url('img/bg__main--first.jpg');")
+	.main-page-content
+		include main.jade
+.main-page-slider__item
+	.main-page-content
+		include main-catalog.jade
+	.main-bottom-nav
+		a.main-bottom-nav__all-items.btn--arrow-right(href="#") SEE ALL
+		.main-bottom-nav__arrows
+			button.main-catalog-slider--prev.main-bottom-nav__arrows--left
+			button.main-catalog-slider--next.main-bottom-nav__arrows--right
+.main-page-slider__item
+	.main-page-content
+		include main-documents.jade
+.main-page-slider__item
+	.main-page-content
+		include main-news.jade
+	.main-bottom-nav
+		a.main-bottom-nav__all-items.btn--arrow-right(href="#") SEE ALL
+		.main-bottom-nav__arrows
+			button.main-news-nav.main-bottom-nav__arrows--left(data-action="prev")
+			button.main-news-nav.main-bottom-nav__arrows--right(data-action="next")
+.main-page-slider__item
+	.main-page-content
+		include main-about.jade
+.main-page-slider__item
+	.main-page-content
+		include main-contacts.jade
+.main-page-slider__item
+	.main-page-content
+		include main-portfolio.jade
+	.main-bottom-nav
+		a.main-bottom-nav__all-items.btn--arrow-right(href="#") SEE ALL
+		.main-bottom-nav__arrows
+			button.main-portfolio-slider--prev.main-bottom-nav__arrows--left
+			button.main-portfolio-slider--next.main-bottom-nav__arrows--right

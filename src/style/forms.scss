@@ -1,0 +1,93 @@
+.contacts {
+	&-search-form {
+		position: relative;
+		margin-bottom: 30px;
+		margin-top: 30px;	
+		&__input {
+			width: 100%;
+			padding: 15px 20px;
+			border: 1px rgb(229, 229, 229) solid;
+			background: rgb(247, 247, 247);
+			font-size: 16px;
+			color: rgb(169, 169, 169);
+			outline: none;
+		}
+		&__submit {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 50px;
+			margin: 0!important;	
+			background-color: rgba(255, 255, 255, 0);
+			border: none;
+		}
+	}
+	&-form-wrap {
+		position: relative;
+		margin-top: 100px;
+		padding: 120px 0 70px 0;
+		background: rgb(245, 245, 245);
+		&::before {
+			content: '';
+			position: absolute;
+			width: 4px;
+			height: 80px;
+			top: -40px;
+			left: calc(50% - 4px);
+			background: rgb(215, 3, 27);
+		}
+	}
+	&-form {
+		&__title {
+			margin-bottom: 80px;
+			font-size: 42px;
+			font-family: $primary-font-bold;
+		}
+		&__input {
+			width: 100%;
+			margin-bottom: 60px;
+			padding: 15px 0;
+			border-width: 0 0 2px 0;
+			border-style: solid;
+			border-color: rgb(197, 197, 197);
+			background: none;
+			font-size: 16px;
+			outline: none;
+			&:focus {
+				border-color: rgb(215, 3, 27);
+			}
+		}
+		&__submit {
+			padding: 15px 80px;
+			background: rgb(215, 3, 27);
+			border: none;
+			border-radius: 40px;
+			font-size: 18px;
+			font-family: $primary-font-bold;
+			letter-spacing: 4px;
+			color: rgb(255, 255, 255);
+			outline: none;
+		}
+	}
+}
+
+.subscribe {
+	position: relative;	
+	&__input {
+		padding: 10px 50px 10px 20px;
+		border: 1px rgb(183, 183, 183) solid;
+		color: rgb(0, 0, 0);
+		letter-spacing: 1px;
+	}
+	&__button {
+		position: absolute;
+		display: block;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		padding: 0 15px;
+		border: none;
+		background: url('../img/arrow__button-long--red.png') center center no-repeat;
+	}
+}

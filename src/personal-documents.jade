@@ -1,0 +1,171 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content
+				.personal
+					.container
+						.personal__name Wellcome Alexey
+						.personal-panel
+							button.personal-menu-btn Documents
+							ul.personal-menu
+								li.personal-menu__item
+									a.personal-menu__link(href="/personal.html") profile
+								li.personal-menu__item
+									a.personal-menu__link(href="/personal-promo.html") Promo
+								li.personal-menu__item
+									a.personal-menu__link.active(href="#") documents
+							button.personal__logout
+								| exit
+								i
+				.personal-form-wrap
+					.container
+						.personal-form
+							ul.documents-tabs.row
+								li.col-sm-3.col-xs-6.documents-tabs__item Certificates
+								li.col-sm-3.col-xs-6.documents-tabs__item Catalogues
+								li.col-sm-3.col-xs-6.documents-tabs__item Technical information
+								li.col-sm-3.col-xs-6.documents-tabs__item Expertise conclusion
+							.hr
+							.documents-tabs-content
+								.documents-tabs-content__item
+									.row
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__image
+												img(src="/img/documents-1.jpg", alt="")
+											.documents-tizer__content
+												.documents-tizer__desc General Catalogue ESTIMA 2016
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__image
+												img(src="/img/documents-2.jpg", alt="")
+											.documents-tizer__content
+												.documents-tizer__desc Catalogue of Compliance for glazed ceramic granite (frost F200)
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__image
+												img(src="/img/documents-3.jpg", alt="")
+											.documents-tizer__content
+												.documents-tizer__desc Certificate of Conformity: catalogue ESTIMA Samara    
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+								.documents-tabs-content__item
+									.row
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__content
+												.documents-tizer__desc General Catalogue ESTIMA 2016
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__content
+												.documents-tizer__desc Catalogue of Compliance for glazed ceramic granite (frost F200)
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__content
+												.documents-tizer__desc Certificate of Conformity: catalogue ESTIMA Samara    
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+								.documents-tabs-content__item
+									.row
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__image
+												img(src="/img/documents-2.jpg", alt="")
+											.documents-tizer__content
+												.documents-tizer__desc Catalogue of Compliance for glazed ceramic granite (frost F200)
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__image
+												img(src="/img/documents-1.jpg", alt="")
+											.documents-tizer__content
+												.documents-tizer__desc General Catalogue ESTIMA 2016
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__image
+												img(src="/img/documents-3.jpg", alt="")
+											.documents-tizer__content
+												.documents-tizer__desc Certificate of Conformity: catalogue ESTIMA Samara
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+								.documents-tabs-content__item
+									.row
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__content
+												.documents-tizer__desc General Catalogue ESTIMA 2016
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__content
+												.documents-tizer__desc Certificate of Conformity: catalogue ESTIMA Samara
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+										.col-md-4.col-sm-6.documents-tizer
+											.documents-tizer__content
+												.documents-tizer__desc Catalogue of Compliance for glazed ceramic granite (frost F200)
+												.documents-tizer__panel
+													a.btn--arrow-right.pull-left(href="#") LEARN MORE
+													.download.pull-right
+														.download__size 435 Kb
+														a.download__icon(href="#")
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				include templates/footer-inner.jade				
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade

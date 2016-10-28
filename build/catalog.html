@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head></head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="vendor/slick/slick.css">
+<link rel="stylesheet" href="vendor/slick/slick-theme.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/common.js"></script>
+<div id="page-preloader"><span class="spinner"></span></div>
+<body>
+  <div class="inner-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="site-logo light-theme"><a href="/"></a></div>
+        <div class="header__panel">
+          <button class="icon icon__auth light-theme"></button>
+          <button data-target-modal="search-modal" class="icon icon__search light-theme btn-modal"></button>
+          <button class="select-language">rus</button>
+          <div class="main-menu-panel">
+            <button data-target-modal="main-menu-modal" class="main-menu-button light-theme btn-modal">menu<span class="main-menu-button-icon"></span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="inner-content">
+      <div class="catalog-header">
+        <div class="container">
+          <div class="catalog-header__title">Catalogue</div>
+          <button class="catalog-header__current-category visible-xs">Marble</button>
+          <ul class="catalog-header-menu list-inline">
+            <li class="catalog-header-menu__item active"><a href="#" class="catalog-header-menu__link active">Marble</a></li>
+            <li class="catalog-header-menu__item"><a href="#" class="catalog-header-menu__link">Vertical</a></li>
+            <li class="catalog-header-menu__item"><a href="#" class="catalog-header-menu__link">Wood</a></li>
+            <li class="catalog-header-menu__item"><a href="#" class="catalog-header-menu__link">Design</a></li>
+            <li class="catalog-header-menu__item"><a href="#" class="catalog-header-menu__link">Decoration</a></li>
+            <li class="catalog-header-menu__item"><a href="#" class="catalog-header-menu__link">Cement</a></li>
+            <li class="catalog-header-menu__item"><a href="#" class="catalog-header-menu__link">Stone</a></li>
+            <li class="catalog-header-menu__item"><a href="#" class="catalog-header-menu__link">Commercial</a></li>
+            <li class="catalog-header-menu__item"><a href="#" class="catalog-header-menu__link">Ceramic tile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="catalog__title">Marble</div>
+      </div>
+      <div class="catalog-filter-mobile visible-xs">
+        <div class="container"> 
+          <button class="catalog-filter-mobile__button">Open filtrer</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="catalog-filter">
+          <div class="catalog-filter-item"><span>
+               
+              Size<i class="catalog-filter-item-arrow"></i></span>
+            <div class="catalog-filter-item__sub">
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-1" value="Street">
+                <label for="area-1">Street</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-2" value="Lobby">
+                <label for="area-2">Lobby</label>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-filter-item"><span>
+               
+              Type<i class="catalog-filter-item-arrow"></i></span>
+            <div class="catalog-filter-item__sub">
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-1" value="Street">
+                <label for="area-1">Street</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-2" value="Lobby">
+                <label for="area-2">Lobby									</label>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-filter-item"><span>
+               
+              Area of application<i class="catalog-filter-item-arrow"></i></span>
+            <div class="catalog-filter-item__sub">
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-1" value="Street">
+                <label for="area-1">Street</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-2" value="Lobby">
+                <label for="area-2">Lobby	</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-3" value="Porch">
+                <label for="area-3">Porch	</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-4" value="Patio">
+                <label for="area-4">Patio	</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-5" value="Kitchen">
+                <label for="area-5">Kitchen	</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-6" value="Balcony">
+                <label for="area-6">Balcony	</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-7" value="Launge">
+                <label for="area-7">Launge	</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-8" value="Dwelling">
+                <label for="area-8">Dwelling</label>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-filter-item"><span>
+               
+              Color<i class="catalog-filter-item-arrow"></i></span>
+            <div class="catalog-filter-item__sub">
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-1" value="Street">
+                <label for="area-1">Street</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-2" value="Lobby">
+                <label for="area-2">Lobby</label>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-filter-item"><span>
+               
+              Surface type<i class="catalog-filter-item-arrow"></i></span>
+            <div class="catalog-filter-item__sub">
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-1" value="Street">
+                <label for="area-1">Street</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-2" value="Lobby">
+                <label for="area-2">Lobby</label>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-filter-item"><span>
+               
+              Shape<i class="catalog-filter-item-arrow"></i></span>
+            <div class="catalog-filter-item__sub">
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-1" value="Street">
+                <label for="area-1">Street</label>
+              </div>
+              <div class="catalog-filter-item__checkbox">
+                <input type="checkbox" id="area-2" value="Lobby">
+                <label for="area-2">Lobby					</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row catalog-tizers">
+          <div class="col-md-4 col-sm-6 catalog-tizers__item"><img src="img/catalog-1.jpg" alt="" class="img-responsive catalog-tizers__image"><span class="catalog-tizers__title">BOLERO</span>
+            <div class="catalog-tizers-popup hidden-xs">
+              <div class="catalog-tizers-popup__image"><img src="img/catalog-1.jpg" alt="" class="img-responsive"><span class="catalog-tizers__title">BOLERO</span></div>
+              <div class="catalog-tizers-sample"><img src="/img/catalog-sample-1.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-2.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-3.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-4.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-5.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-6.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-7.jpg" alt="" class="catalog-tizers-sample__image"></div><a href="/catalog-model.html" class="catalog-tizers-link"><span class="btn--arrow-right btn--arrow-right-white">LEARN MORE</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 catalog-tizers__item"><img src="img/catalog-2.jpg" alt="" class="img-responsive catalog-tizers__image"><span class="catalog-tizers__title">CAPRI</span>
+            <div class="catalog-tizers-popup hidden-xs">
+              <div class="catalog-tizers-popup__image"><img src="img/catalog-2.jpg" alt="" class="img-responsive"><span class="catalog-tizers__title">CAPRI</span></div>
+              <div class="catalog-tizers-sample"><img src="/img/catalog-sample-1.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-2.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-3.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-4.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-5.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-6.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-7.jpg" alt="" class="catalog-tizers-sample__image"></div><a href="/catalog-model.html" class="catalog-tizers-link"><span class="btn--arrow-right btn--arrow-right-white">LEARN MORE</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 catalog-tizers__item"><img src="img/catalog-3.jpg" alt="" class="img-responsive catalog-tizers__image"><span class="catalog-tizers__title">DREAM</span>
+            <div class="catalog-tizers-popup hidden-xs">
+              <div class="catalog-tizers-popup__image"><img src="img/catalog-3.jpg" alt="" class="img-responsive"><span class="catalog-tizers__title">DREAM</span></div>
+              <div class="catalog-tizers-sample"><img src="/img/catalog-sample-1.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-2.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-3.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-4.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-5.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-6.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-7.jpg" alt="" class="catalog-tizers-sample__image"></div><a href="/catalog-model.html" class="catalog-tizers-link"><span class="btn--arrow-right btn--arrow-right-white">LEARN MORE</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 catalog-tizers__item"><img src="img/catalog-4.jpg" alt="" class="img-responsive catalog-tizers__image"><span class="catalog-tizers__title">POLARIS</span>
+            <div class="catalog-tizers-popup hidden-xs">
+              <div class="catalog-tizers-popup__image"><img src="img/catalog-4.jpg" alt="" class="img-responsive"><span class="catalog-tizers__title">POLARIS</span></div>
+              <div class="catalog-tizers-sample"><img src="/img/catalog-sample-1.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-2.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-3.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-4.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-5.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-6.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-7.jpg" alt="" class="catalog-tizers-sample__image"></div><a href="/catalog-model.html" class="catalog-tizers-link"><span class="btn--arrow-right btn--arrow-right-white">LEARN MORE</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 catalog-tizers__item"><img src="img/catalog-5.jpg" alt="" class="img-responsive catalog-tizers__image"><span class="catalog-tizers__title">ELEGANT</span>
+            <div class="catalog-tizers-popup hidden-xs">
+              <div class="catalog-tizers-popup__image"><img src="img/catalog-5.jpg" alt="" class="img-responsive"><span class="catalog-tizers__title">ELEGANT</span></div>
+              <div class="catalog-tizers-sample"><img src="/img/catalog-sample-1.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-2.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-3.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-4.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-5.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-6.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-7.jpg" alt="" class="catalog-tizers-sample__image"></div><a href="/catalog-model.html" class="catalog-tizers-link"><span class="btn--arrow-right btn--arrow-right-white">LEARN MORE</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 catalog-tizers__item"><img src="img/catalog-6.jpg" alt="" class="img-responsive catalog-tizers__image"><span class="catalog-tizers__title">LATTE</span>
+            <div class="catalog-tizers-popup hidden-xs">
+              <div class="catalog-tizers-popup__image"><img src="img/catalog-6.jpg" alt="" class="img-responsive"><span class="catalog-tizers__title">LATTE</span></div>
+              <div class="catalog-tizers-sample"><img src="/img/catalog-sample-1.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-2.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-3.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-4.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-5.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-6.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-7.jpg" alt="" class="catalog-tizers-sample__image"></div><a href="/catalog-model.html" class="catalog-tizers-link"><span class="btn--arrow-right btn--arrow-right-white">LEARN MORE</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 catalog-tizers__item"><img src="img/catalog-7.jpg" alt="" class="img-responsive catalog-tizers__image"><span class="catalog-tizers__title">PALACE</span>
+            <div class="catalog-tizers-popup hidden-xs">
+              <div class="catalog-tizers-popup__image"><img src="img/catalog-7.jpg" alt="" class="img-responsive"><span class="catalog-tizers__title">PALACE</span></div>
+              <div class="catalog-tizers-sample"><img src="/img/catalog-sample-1.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-2.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-3.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-4.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-5.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-6.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-7.jpg" alt="" class="catalog-tizers-sample__image"></div><a href="/catalog-model.html" class="catalog-tizers-link"><span class="btn--arrow-right btn--arrow-right-white">LEARN MORE</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 catalog-tizers__item"><img src="img/catalog-8.jpg" alt="" class="img-responsive catalog-tizers__image"><span class="catalog-tizers__title">PLATINUM</span>
+            <div class="catalog-tizers-popup hidden-xs">
+              <div class="catalog-tizers-popup__image"><img src="img/catalog-8.jpg" alt="" class="img-responsive"><span class="catalog-tizers__title">PLATINUM</span></div>
+              <div class="catalog-tizers-sample"><img src="/img/catalog-sample-1.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-2.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-3.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-4.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-5.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-6.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-7.jpg" alt="" class="catalog-tizers-sample__image"></div><a href="/catalog-model.html" class="catalog-tizers-link"><span class="btn--arrow-right btn--arrow-right-white">LEARN MORE</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 catalog-tizers__item"><img src="img/catalog-9.jpg" alt="" class="img-responsive catalog-tizers__image"><span class="catalog-tizers__title">RICH</span>
+            <div class="catalog-tizers-popup hidden-xs">
+              <div class="catalog-tizers-popup__image"><img src="img/catalog-1.jpg" alt="" class="img-responsive"><span class="catalog-tizers__title">RICH</span></div>
+              <div class="catalog-tizers-sample"><img src="/img/catalog-sample-1.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-2.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-3.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-4.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-5.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-6.jpg" alt="" class="catalog-tizers-sample__image"><img src="/img/catalog-sample-7.jpg" alt="" class="catalog-tizers-sample__image"></div><a href="/catalog-model.html" class="catalog-tizers-link"><span class="btn--arrow-right btn--arrow-right-white">LEARN MORE</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-desc">
+        <div class="container">
+          <p class="text-center">Production of ESTIMA® ceramic granite complies in full with «green trends». Both raw materials used to produce ceramic granite and the nal product, are safe from ecology and hygienic standpoints. Productsunder ESTIMA® brand are manufactured out of natural raw materials developed from the open pits. </p>
+        </div>
+      </div>
+      <div class="menu-bottom-inner-wrap hidden-xs">
+        <div class="container">
+          <div class="row">
+            <ul class="menu-bottom menu-bottom-inner">
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Catalogue</a></li>
+              <li class="menu-bottom__sep"></li>
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Documents</a></li>
+              <li class="menu-bottom__sep"></li>
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Portfolio</a></li>
+              <li class="menu-bottom__sep"></li>
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">News&Events</a></li>
+              <li class="menu-bottom__sep"></li>
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">About</a></li>
+              <li class="menu-bottom__sep"></li>
+              <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer-inner"> 
+        <div class="container">
+          <form class="subscribe">
+            <input type="text" placeholder="Subscribe" class="subscribe__input">
+            <input type="submit" value="" class="subscribe__button">
+          </form>
+          <div class="row">
+            <div class="col-xs-6 copyright light-theme">© Estima Company						</div>
+            <div class="col-xs-6 social text-right"><a href="#" class="social__item social__item--vk"></a><a href="#" class="social__item social__item--fb"></a><a href="#" class="social__item social__item--youtube"></a></div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </div>
+  <div class="modal-hidden">
+    <div id="search-modal">
+      <div class="search-layout__form container">
+        <div class="box-modal_close"></div>
+        <form class="search-form">
+          <div class="search-form__title text-center">JUST TYPE AND PRESS 'ENTER'</div>
+          <input type="search" class="search-form__input text-center">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hidden">
+    <div id="main-menu-modal" class="main-menu-container">
+      <div class="container">
+        <div class="box-modal_close"></div>
+        <div class="row main-menu-layout">
+          <div class="col-sm-3 main-menu-layout__col">
+            <div class="row">
+              <ul class="main-menu-lvl-1">
+                <li class="main-menu-lvl-1__item"><a href="/" class="main-menu-lvl-1__link">Main page</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#catalog" class="main-menu-lvl-1__link main-menu-lvl-1__link--isChild">Catalogue</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">Documents</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">Portfolio</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">News&Events</a></li>
+                <li class="main-menu-lvl-1__item"><a href="#" class="main-menu-lvl-1__link">About</a></li>
+                <li class="main-menu-lvl-1__item"><a href="/contacts.html" class="main-menu-lvl-1__link">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 main-menu-layout__col">
+            <div class="row">
+              <ul id="catalog" class="main-menu-lvl-2">
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Marble</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Stone</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Wood</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Cement</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Design</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Commercial</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Vertical</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Ceramic tile</a></li>
+                <li class="main-menu-lvl-2__item"><a href="#" class="main-menu-lvl-2__link">Decoration</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 main-menu-layout__col">
+            <div class="main-menu-slider-wrap">
+              <div class="main-menu-slider"><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-2.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">LUX</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-2.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">LUX</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a></div>
+              <div class="main-menu-slider-nav"><a href="#" class="main-menu-slider-nav__link-all btn--arrow-right">SEE ALL</a>
+                <div class="main-menu-slider-nav__arrows catalog-slider__arrows">
+                  <button class="main-menu-slider-nav__arrows-left catalog-slider__arrows-left"></button>
+                  <button class="main-menu-slider-nav__arrows-right catalog-slider__arrows-right"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

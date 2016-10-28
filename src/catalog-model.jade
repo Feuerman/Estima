@@ -1,0 +1,182 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content
+				.model-top
+					.model-top-slider
+						div
+							img.hidden-sm.hidden-xs(src="/img/catalog-model__slide.jpg", alt="")
+							img.visible-sm.visible-xs(src="/img/catalog-model-mobile__slide.jpg", alt="")
+						div
+							img.hidden-sm.hidden-xs(src="/img/catalog-model__slide.jpg", alt="")
+							img.visible-sm.visible-xs(src="/img/catalog-model-mobile__slide.jpg", alt="")
+						div
+							img.hidden-sm.hidden-xs(src="/img/catalog-model__slide.jpg", alt="")
+							img.visible-sm.visible-xs(src="/img/catalog-model-mobile__slide.jpg", alt="")
+					.model-top-slider__nav
+					.model-top-content
+						.container
+							button.btn-catalog-menu 
+								| Catalogue
+								i.arrow-down
+							.model-top-content__title CAPRI
+							.share-block
+								button.share-block__btn-open
+								.share-block__panel
+									a.share-block__link.share-block__link--in(href="#")
+									a.share-block__link.share-block__link--fb(href="#")
+									a.share-block__link.share-block__link--google(href="#")
+									a.share-block__link.share-block__link--mail(href="#")
+					include templates/catalog-menu.jade
+				.container
+					.model-images.pull-left
+						.model-slider
+							img(src="img/model-content__slide-full.jpg", alt="")
+							img(src="img/model-content__slide-full.jpg", alt="")
+							img(src="img/model-content__slide-full.jpg", alt="")
+							img(src="img/model-content__slide-full.jpg", alt="")
+							img(src="img/model-content__slide-full.jpg", alt="")
+						.model-slider-nav
+							.model-slider-thumbs
+								.model-slider-thumbs__image
+									img(src="img/model-content__slide-thumb-1.jpg", alt="")
+								.model-slider-thumbs__image
+									img(src="img/model-content__slide-thumb-2.jpg", alt="")
+								.model-slider-thumbs__image
+									img(src="img/model-content__slide-thumb-3.jpg", alt="")
+								.model-slider-thumbs__image
+									img(src="img/model-content__slide-thumb-1.jpg", alt="")
+								.model-slider-thumbs__image
+									img(src="img/model-content__slide-thumb-2.jpg", alt="")
+							.main-bottom-nav__arrows.pull-right
+								button.model-slider--prev.main-bottom-nav__arrows--left
+								button.model-slider--next.main-bottom-nav__arrows--right
+					.model-desc.pull-right
+						.model-title CAPRI CP 01
+						p The bright sun, white sand and warm waves, the incredible beauty of the Mediterranean landscape - this is what you start to think at first glance at the new collection of porcelain stoneware Capri. 
+						.property-block
+							.col-md-4.col-sm-6
+								span.property__name Family:
+								span Marble
+							.col-md-4.col-sm-6
+								span.property__name Serial:
+								span Vertical
+							.col-md-4.col-sm-6
+								span.property__name Collection:
+								span Capry
+						.property-block
+							.property__title Available sizes:
+							.col-md-4.col-sm-6
+								span.property__value 40 x 40 (16x16”)
+								span.property__value 30 x 30 (12x12”)
+							.col-md-4.col-sm-6
+								span.property__value 30 x 60 (12x24”)
+								span.property__value 60 x 60 (24x24”)
+						.property-block
+							.property__title Layout options:
+							.col-md-4.col-sm-6
+								span.property__value Option 1
+								span.property__value Option 2
+							.col-md-4.col-sm-6
+								span.property__value Option 3
+								span.property__value Option 4
+						.property-block
+							.property__title Suits for:
+							.property-block__image
+								img(src="/img/icon__model-1.png", alt="")
+								img(src="/img/icon__model-2.png", alt="")
+								img(src="/img/icon__model-3.png", alt="")
+				.property-tabs-wrap
+					.container
+						.property-tabs
+							.property-tabs__item Documents
+							.property-tabs__item Featuress
+							.property-tabs__item Counts
+							.property-tabs__item Packing and weights
+							.property-tabs__item Decorss
+							.property-tabs__item Special trims
+				.property-tabs-content-wrap
+					.container
+						.property-tabs-content
+							.property-table__title Title
+							.table-responsive
+								table.property-table.table
+									tbody
+										tr
+											td Name in table
+											td 30x30 (12x12”)
+											td 30x30 (12x12”)
+											td 30x30 (12x12”)
+											td 30x30 (12x12”)
+											td 30x30 (12x12”)
+										tr
+											td One more name
+											td 20x20 (8x8”)
+											td 20x20 (8x8”)
+											td 20x20 (8x8”)
+											td 20x20 (8x8”)
+											td 20x20 (8x8”)
+										tr
+											td Name in table
+											td 12 (0,47”)
+											td 12 (0,47”)
+											td 12 (0,47”)
+											td 12 (0,47”)
+											td 12 (0,47”)
+				.container.recommend
+					.recommend-title
+						h2 We recommend
+						.main-bottom-nav__arrows
+								button.recommend-slider--prev.main-bottom-nav__arrows--left
+								button.recommend-slider--next.main-bottom-nav__arrows--right
+					.recommend-slider
+						.recommend-slider__item
+							img.recommend-slider__item-image(src="/img/recommend__slide-1.jpg", alt="")
+							.recommend-slider__item-name CP 012 12
+						.recommend-slider__item
+							img.recommend-slider__item-image(src="/img/recommend__slide-2.jpg", alt="")
+							.recommend-slider__item-name CP 012 12
+						.recommend-slider__item
+							img.recommend-slider__item-image(src="/img/recommend__slide-3.jpg", alt="")
+							.recommend-slider__item-name CP 012 12
+						.recommend-slider__item
+							img.recommend-slider__item-image(src="/img/recommend__slide-4.jpg", alt="")
+							.recommend-slider__item-name CP 012 12
+						.recommend-slider__item
+							img.recommend-slider__item-image(src="/img/recommend__slide-5.jpg", alt="")
+							.recommend-slider__item-name CP 012 12
+						.recommend-slider__item
+							img.recommend-slider__item-image(src="/img/recommend__slide-1.jpg", alt="")
+							.recommend-slider__item-name CP 012 12
+						.recommend-slider__item
+							img.recommend-slider__item-image(src="/img/recommend__slide-2.jpg", alt="")
+							.recommend-slider__item-name CP 012 12
+				.catalog-desc.catalog-desc--nomargin
+					.container
+						p.text-center Production of ESTIMA® ceramic granite complies in full with «green trends». Both raw materials used to produce ceramic granite and the nal product, are safe from ecology and hygienic standpoints. Productsunder ESTIMA® brand are manufactured out of natural raw materials developed from the open pits. 
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				include templates/footer-inner.jade	
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade

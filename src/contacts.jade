@@ -1,0 +1,148 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content
+				.container.visible-xs
+					.row.hr-mobile
+					.page-title OFFICES
+				.container.visible-xs
+					select.form-control.contacts-offices-category(name="officesCategory")
+						option(value="Authorized dealers") Authorized dealers
+						option(value="Branded salons") Branded salons
+						option(value="Regional offices") Regional offices
+				.contacts-map
+					.contacts__title-wrap.hidden-xs
+						.container
+							.page-title.contacts__title OFFICES
+					img(src="/img/bg__main--contacts.jpg", alt="")
+				.contacts-panel.hidden-xs
+					.container
+						.contacts-panel__col.pull-left
+							button.btn-br.btn-br--blue Authorized dealers
+							button.btn-br.btn-br--red Branded salons
+							button.btn-br.btn-br--brown Regional offices
+						.contacts-panel__col.pull-right
+							.contacts-panel-input-wrap.pull-right
+								span.text-right Show worl map
+								.onoffswitch
+									input#myonoffswitch.onoffswitch-checkbox(type='checkbox', name='onoffswitch')
+									label.onoffswitch-label(for='myonoffswitch')
+										span.onoffswitch-inner
+										span.onoffswitch-switch
+								span.text-left Moscow subway
+				.container
+					form.contacts-search-form
+						input.contacts-search-form__input(type="text" placeholder="Search by country, state and city ")
+						input.contacts-search-form__submit.icon.icon__search.light-theme(type="submit" value="")
+					.contacts-offices
+						.row
+							.col-md-4.col-sm-6
+								.contacts-offices-item
+									.contacts-offices-item__title Monarch
+									.contacts-offices-item__location Russian Federation, Sochi 
+									.contacts-offices-item__desc
+										p Gagarina str, 72
+										p Phone:  +7 (862) 200-1015
+										p E-mail: estima@estima.ru
+									.contacts-offices-item__panel
+										a.btn--arrow-right.pull-left(href="/contacts__cart.html") DETAILS
+										.btn-br.btn-br--small.btn-br--blue.pull-right Authorized dealers
+							.col-md-4.col-sm-6
+								.contacts-offices-item
+									.contacts-offices-item__title Studio Estima Rusakovskays
+									.contacts-offices-item__location Russian Federation, Moscow
+									.contacts-offices-item__desc
+										p 107553, Rusakovskaya 25, stroenie 1
+										p Phone:  +7 (495) 775-6040
+										p E-mail: estima@estima.ru
+									.contacts-offices-item__panel
+										a.btn--arrow-right.pull-left(href="/contacts__cart.html") DETAILS
+										.btn-br.btn-br--small.btn-br--red.pull-right Branded salons
+							.col-md-4.col-sm-6
+								.contacts-offices-item
+									.contacts-offices-item__title Central Office
+									.contacts-offices-item__location Russian Federation, Moscow
+									.contacts-offices-item__desc
+										p 117246, Nauchniy proezd 14A, stroenie 3
+										p Phone:  +7 (495) 775-6040
+										p E-mail: estima@estima.ru
+									.contacts-offices-item__panel
+										a.btn--arrow-right.pull-left(href="/contacts__cart.html") DETAILS
+										.btn-br.btn-br--small.btn-br--blue.pull-right Authorized dealers
+							.col-md-4.col-sm-6
+								.contacts-offices-item
+									.contacts-offices-item__title Studio Estima Rusakovskays
+									.contacts-offices-item__location Russian Federation, Moscow
+									.contacts-offices-item__desc
+										p 107553, Rusakovskaya 25, stroenie 1
+										p Phone:  +7 (495) 775-6040
+										p E-mail: estima@estima.ru
+									.contacts-offices-item__panel
+										a.btn--arrow-right.pull-left(href="/contacts__cart.html") DETAILS
+										.btn-br.btn-br--small.btn-br--red.pull-right Branded salons
+							.col-md-4.col-sm-6
+								.contacts-offices-item
+									.contacts-offices-item__title Central Office
+									.contacts-offices-item__location Russian Federation, Moscow
+									.contacts-offices-item__desc
+										p 117246, Nauchniy proezd 14A, stroenie 3
+										p Phone:  +7 (495) 775-6040
+										p E-mail: estima@estima.ru
+									.contacts-offices-item__panel
+										a.btn--arrow-right.pull-left(href="/contacts__cart.html") DETAILS
+										.btn-br.btn-br--small.btn-br--blue.pull-right Authorized dealers
+							.col-md-4.col-sm-6
+								.contacts-offices-item
+									.contacts-offices-item__title Central Office
+									.contacts-offices-item__location Russian Federation, Moscow
+									.contacts-offices-item__desc
+										p 117246, Nauchniy proezd 14A, stroenie 3
+										p Phone:  +7 (495) 775-6040
+										p E-mail: estima@estima.ru
+									.contacts-offices-item__panel
+										a.btn--arrow-right.pull-left(href="/contacts__cart.html") DETAILS
+										.btn-br.btn-br--small.btn-br--blue.pull-right Authorized dealers
+						.container.text-center
+							button.btn--show-more Show more
+				.contacts-form-wrap
+					.container
+						.row
+							form.contacts-form
+								.contacts-form__title.text-center Contact Us
+								.contacts-form__row
+									.col-sm-4.col-xs-12
+										input.contacts-form__input(type="text" placeholder="Alex Klopkol")
+									.col-sm-4.col-xs-12
+										input.contacts-form__input(type="text" placeholder="Phone number")
+									.col-sm-4.col-xs-12
+										input.contacts-form__input(type="text" placeholder="E-mail address")
+								.contacts-form__row.col-xs-12
+									textarea.contacts-form__input(name="", cols="30", rows="2", placeholder="Message")
+								.contacts-form__row.text-center
+									input.contacts-form__submit(type="submit" value="SEND")
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				include templates/footer-inner.jade	
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade
