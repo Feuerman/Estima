@@ -3,107 +3,301 @@ include templates/preloader.jade
 body
 	.inner-wrapper
 		include templates/header.jade
-		section.inner-content
+		section.inner-content.inner-content--border-top
 				.container
-					.page-title
-				.news-slider
-					.news-slider__item
-						.news-slider__image
-							img(src="/img/news__header.jpg", alt="")
-						.news-slider__content
-							.news-slider__title Promo START for this site
-							.news-slider__text Conveniently, the raws divided into main raw additional Birthday Celebration of show-room «ESTIMA Ceramic Studio« Krasnodar!
-					.news-slider__item
-						.news-slider__image
-							img(src="/img/news__header.jpg", alt="")
-						.news-slider__content
-							.news-slider__title Promo START for this site
-							.news-slider__text Conveniently, the raws divided into main raw additional Birthday Celebration of show-room «ESTIMA Ceramic Studio« Krasnodar!
-					.news-slider__item
-						.news-slider__image
-							img(src="/img/news__header.jpg", alt="")
-						.news-slider__content
-							.news-slider__title Promo START for this site
-							.news-slider__text Conveniently, the raws divided into main raw additional Birthday Celebration of show-room «ESTIMA Ceramic Studio« Krasnodar!
+					.page-title NEWS & EVENTS
+				.news-slider-wrap
+					.news-slider.news-page-slider.desktop
+						.news-slider__item
+							.news-slider__image
+								img.hidden-xs(src="/img/news__header.jpg", alt="")
+								img.visible-xs.hidden-xss(src="/img/news__header-1.jpg", alt="")
+								img.visible-xss(src="/img/news__header-2.jpg", alt="")
+							.news-slider__content
+								div
+									.news-slider__title Promo START for this site
+									p Conveniently, the raws divided into main raw additional Birthday Celebration of show-room «ESTIMA Ceramic Studio« Krasnodar!
+						.news-slider__item
+							.news-slider__image
+								img.hidden-xs(src="/img/news__header.jpg", alt="")
+								img.visible-xs.hidden-xss(src="/img/news__header-1.jpg", alt="")
+								img.visible-xss(src="/img/news__header-2.jpg", alt="")
+							.news-slider__content
+								div
+									.news-slider__title Promo START for this site
+									p Conveniently, the raws divided into main raw additional Birthday Celebration of show-room «ESTIMA Ceramic Studio« Krasnodar!
+						.news-slider__item
+							.news-slider__image
+								img.hidden-xs(src="/img/news__header.jpg", alt="")
+								img.visible-xs.hidden-xss(src="/img/news__header-1.jpg", alt="")
+								img.visible-xss(src="/img/news__header-2.jpg", alt="")
+							.news-slider__content
+								div
+									.news-slider__title Promo START for this site
+									p Conveniently, the raws divided into main raw additional Birthday Celebration of show-room «ESTIMA Ceramic Studio« Krasnodar!
+					.news-slider-dots.slider-dots
 				.container
-					ul.tabs.tabs--horizontal.tabs--main-news
-						li.tabs__item
-							a.tabs__link.active(href="#tab1") ALL
-						li.tabs__item
-							a.tabs__link(href="#tab2") NEWS
-						li.tabs__item
-							a.tabs__link(href="#tab3") EVENTS
-						li.tabs__item
-							a.tabs__link(href="#tab4") ARCTICLES
-						li.tabs__item
-							a.tabs__link(href="#tab5") PROMO
-						li.tabs__item
-							a.tabs__link(href="#tab6") EXHIBITION
-					.main-news.active	
-						.main-news-item
-							img.main-news-item__image(src="/img/main-news__item-1.jpg", alt="")
-							.main-news-item__content
-								.main-news-item__text
-									p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
-								.main-news-item__info
-									span.main-news-item__info--category News
-									span.main-news-item__info--date 22 August, 2016
-						.main-news-item
-							img.main-news-item__image(src="/img/main-news__item-2.jpg", alt="")
-							.main-news-item__content
-								.main-news-item__text
-									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
-								.main-news-item__info
-									span.main-news-item__info--category News
-									span.main-news-item__info--date 22 August, 2016
-						.main-news-item
-							img.main-news-item__image(src="/img/main-news__item-3.jpg", alt="")
-							.main-news-item__content
-								.main-news-item__text
-									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
-								.main-news-item__info
-									span.main-news-item__info--category News
-									span.main-news-item__info--date 22 August, 2016
-						.main-news-item
-							img.main-news-item__image(src="/img/main-news__item-4.jpg", alt="")
-							.main-news-item__content
-								.main-news-item__text
-									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
-								.main-news-item__info
-									span.main-news-item__info--category News
-									span.main-news-item__info--date 22 August, 2016
-						.main-news-item
-							img.main-news-item__image(src="/img/main-news__item-5.jpg", alt="")
-							.main-news-item__content
-								.main-news-item__text
-									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
-								.main-news-item__info
-									span.main-news-item__info--category News
-									span.main-news-item__info--date 22 August, 2016
-						.main-news-item
-							img.main-news-item__image(src="/img/main-news__item-6.jpg", alt="")
-							.main-news-item__content
-								.main-news-item__text
-									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
-								.main-news-item__info
-									span.main-news-item__info--category News
-									span.main-news-item__info--date 22 August, 2016
-						.main-news-item
-							img.main-news-item__image(src="/img/main-news__item-7.jpg", alt="")
-							.main-news-item__content
-								.main-news-item__text
-									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
-								.main-news-item__info
-									span.main-news-item__info--category News
-									span.main-news-item__info--date 22 August, 2016
-						.main-news-item
-							img.main-news-item__image(src="/img/main-news__item-8.jpg", alt="")
-							.main-news-item__content
-								.main-news-item__text
-									p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
-								.main-news-item__info
-									span.main-news-item__info--category News
-									span.main-news-item__info--date 22 August, 2016
+					.news-tabs
+						button.btn-menu-dropdown.visible-xs ALL
+						ul.tabs.menu-dropdown
+							li.tabs__item 
+								a(href="#") ALL
+							li.tabs__item 
+								a(href="#") NEWS
+							li.tabs__item 
+								a(href="#") EVENTS
+							li.tabs__item 
+								a(href="#") ARCTICLES
+							li.tabs__item 
+								a(href="#") PROMO
+							li.tabs__item 
+								a(href="#") EXHIBITION
+					.news-content
+						.row
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-1.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-2.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-3.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-4.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-5.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-6.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-7.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-8.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-8.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+					.news-content
+						.row
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-5.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-6.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-7.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-8.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+					.news-content
+						.row
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-1.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-2.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-3.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-4.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p International Construction and Interior Exhibition BATIMAT RUSSIA 2016!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+					.news-content
+						.row
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-1.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-2.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-3.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+					.news-content
+						.row
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-7.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-8.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-5.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+					.news-content
+						.row
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-4.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-5.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
+							.col-md-6.news-item
+								a(href="#")
+									img.news-item__image(src="/img/main-news__item-6.jpg", alt="")
+									.news-item__content
+										.news-item__text
+											p Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!
+										.news-item__info
+											span.news-item__info--category News
+											span.news-item__info--date 22 August, 2016
 				.menu-bottom-inner-wrap.hidden-xs
 					.container
 						.row

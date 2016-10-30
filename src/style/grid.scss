@@ -7,13 +7,16 @@ body {
 	font-family: $primary-font-regular;	
 }
 .ui-dialog-open {
-	margin-right: 17px !important;
 	overflow: visible !important;
 	width: auto;
 }
 
 .ui-dialog-open body {
 	overflow: hidden!important;
+}
+
+.container-relative {
+	position: relative;
 }
 
 .main-wrapper {
@@ -26,6 +29,13 @@ body {
 	margin: 0 auto;	
 	padding-top: 25px;
 	padding-bottom: 50px;
+}
+
+.inner-content {
+	&--border-top {
+		padding-top: 40px;
+		border-top: 1px rgb(219, 219, 219) solid;
+	}
 }
 
 .inner-wrapper {

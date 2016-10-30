@@ -2,51 +2,44 @@
 	#main-menu-modal.main-menu-container
 		.container
 			.box-modal_close
-			.row.main-menu-layout
+			.main-menu-layout
 				.col-sm-3.main-menu-layout__col
 					.row
-						ul.main-menu-lvl-1
-							li.main-menu-lvl-1__item
-								a.main-menu-lvl-1__link(href="/") Main page
-							li.main-menu-lvl-1__item
-								a.main-menu-lvl-1__link.main-menu-lvl-1__link--isChild(href="#catalog") Catalogue
-							li.main-menu-lvl-1__item
-								a.main-menu-lvl-1__link(href="#") Documents
-							li.main-menu-lvl-1__item
-								a.main-menu-lvl-1__link(href="#") Portfolio
-							li.main-menu-lvl-1__item
-								a.main-menu-lvl-1__link(href="#") News&Events
-							li.main-menu-lvl-1__item
-								a.main-menu-lvl-1__link(href="#") About
-							li.main-menu-lvl-1__item
-								a.main-menu-lvl-1__link(href="/contacts.html") Contacts
-				.col-sm-3.main-menu-layout__col
+						ul.main-menu.main-menu-lvl-1
+							li.main-menu__item
+								a.main-menu__link(href="/") Main page
+							li.main-menu__item
+								a.main-menu__link.main-menu__link--isChild(href="#") Catalogue
+							li.main-menu__item
+								a.main-menu__link(href="#") Documents
+							li.main-menu__item
+								a.main-menu__link(href="#") Portfolio
+							li.main-menu__item
+								a.main-menu__link(href="/news.html") News&Events
+							li.main-menu__item
+								a.main-menu__link(href="#") About
+							li.main-menu__item
+								a.main-menu__link(href="/contacts.html") Contacts
+				.col-sm-3.main-menu-layout__col.hidden-xs
 					.row
-						ul.main-menu-lvl-2(id="catalog")
-							li.main-menu-lvl-2__item
-								a.main-menu-lvl-2__link(href="#") Marble
-							li.main-menu-lvl-2__item
-								a.main-menu-lvl-2__link(href="#") Stone
-							li.main-menu-lvl-2__item
-								a.main-menu-lvl-2__link(href="#") Wood
-							li.main-menu-lvl-2__item
-								a.main-menu-lvl-2__link(href="#") Cement
-							li.main-menu-lvl-2__item
-								a.main-menu-lvl-2__link(href="#") Design
-							li.main-menu-lvl-2__item
-								a.main-menu-lvl-2__link(href="#") Commercial
-							li.main-menu-lvl-2__item
-								a.main-menu-lvl-2__link(href="#") Vertical
-							li.main-menu-lvl-2__item
-								a.main-menu-lvl-2__link(href="#") Ceramic tile
-							li.main-menu-lvl-2__item
-								a.main-menu-lvl-2__link(href="#") Decoration
-				.col-sm-6.main-menu-layout__col
-					.main-menu-slider-wrap
-						.main-menu-slider
-							include modal__slider.jade
-						.main-menu-slider-nav
-							a.main-menu-slider-nav__link-all.btn--arrow-right(href="#") SEE ALL
-							.main-menu-slider-nav__arrows.catalog-slider__arrows
-								button.main-menu-slider-nav__arrows-left.catalog-slider__arrows-left
-								button.main-menu-slider-nav__arrows-right.catalog-slider__arrows-right
+						ul.main-menu-sub
+							li.main-menu-sub__item
+								a.main-menu-sub__link(href="#") Marble
+							li.main-menu-sub__item
+								a.main-menu-sub__link(href="#") Stone
+							li.main-menu-sub__item
+								a.main-menu-sub__link(href="#") Wood
+							li.main-menu-sub__item
+								a.main-menu-sub__link(href="#") Cement
+							li.main-menu-sub__item
+								a.main-menu-sub__link(href="#") Design
+							li.main-menu-sub__item
+								a.main-menu-sub__link(href="#") Commercial
+							li.main-menu-sub__item
+								a.main-menu-sub__link(href="#") Vertical
+							li.main-menu-sub__item
+								a.main-menu-sub__link(href="#") Ceramic tile
+							li.main-menu-sub__item
+								a.main-menu-sub__link(href="#") Decoration
+				.col-sm-6.main-menu-layout__col.hidden-xs
+					include modal__slider.jade

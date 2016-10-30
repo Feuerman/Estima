@@ -15,16 +15,29 @@
 		font-size: 32px;
 		margin-bottom: 20px;
 	}
-	.main-news {
-		&-item:not([class*="slider"]) {
-			flex-direction: column;
-		}
+	.news {
 		&-item {
-			margin-bottom: 40px;
+			a {
+				display: block;
+			}
 			&__image {
+				display: block;
 				width: 100%;
-			}	
-		}		
+			}
+			&__content {
+				display: block;
+				padding: 20px 15px;
+			}
+			&__text {
+				margin-top: 10px;
+			}
+			&__info {
+				position: relative;
+				bottom: 0;
+				left: 0;
+				margin-top: 30px;
+			}
+		}	
 	}
 	.main-contacts {
 		
@@ -74,4 +87,10 @@
 			text-align: left;
 		}
 	}	
+	.visible-xss {
+		display: block!important;
+	}
+	.hidden-xss {
+		display: none!important;
+	}
 }

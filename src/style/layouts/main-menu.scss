@@ -1,7 +1,8 @@
-.main-menu {
-	&-panel {
-		
-	}
+.main-menu {	
+	height: 100%;
+	list-style-type: none;
+	padding: 0;
+	border-right: 1px rgba(255, 255, 255, 0.2) solid;
 	&-container {
 		position: absolute;
 		top: 0;
@@ -19,37 +20,32 @@
 		min-height: 100%;
 		padding-top: 100px;
 		&__col {
-			overflow: hidden;	
-			border-right: 1px rgba(255, 255, 255, 0.2) solid;
+			overflow: hidden;
 			&:last-child {
-				border: none;
+				padding: 0;
 			}
 		}
 	}
-	&-lvl-1, &-lvl-2 {		
+	&__item {
+		font-family: $primary-font-bold;
+		font-size: 30px;
+		& ~ li {
+			margin-top: 40px;
+		}
+	}
+	&__link {
+		padding: 0!important;
+		color: rgb(255, 255, 255);
+		&.active, &:hover, &:active {
+			color: rgb(237, 28, 36);
+			text-decoration: none;
+		}
+	}
+	&-sub {		
 		height: 100%;
-		list-style-type: none;		
-	}
-	&-lvl-1 {
-		padding: 0;
-		&__item {
-			font-family: $primary-font-bold;
-			font-size: 30px;
-			& ~ li {
-				margin-top: 40px;
-			}
-		}
-		&__link {
-			padding: 0!important;
-			color: rgb(255, 255, 255);
-			&.active, &:hover, &:active {
-				color: rgb(237, 28, 36);
-				text-decoration: none;
-			}
-		}
-	}
-	&-lvl-2 {
-		transform: translateX(100%);	
+		list-style-type: none;
+		border-right: 1px rgba(255, 255, 255, 0.2) solid;
+		transform: translateX(100%);
 		padding-top: 20px;
 		transition: transform 0.5s ease-out;
 		&.active {
@@ -72,11 +68,7 @@
 		}
 	}
 	&-slider-wrap {
-		opacity: 0;			
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 100%;
+		opacity: 0;	
 		width: 90%;
 		float: right;
 		transition: all 0.3s ease-in-out;
@@ -85,6 +77,7 @@
 		}
 	}
 	&-slider {
+		margin: 0 -15px;
 		&__item {
 			margin-bottom: 20px;
 			outline: none!important;
@@ -106,39 +99,12 @@
 		.slick-slide {
 			margin: 0 15px;
 		}
-		.slick-list {
-			margin: 0 -15px;
-		}
 	}
 	&-slider-nav {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		&__link-all {
-			
-		}
+		overflow: hidden;
+		width: 100%;
 		&__arrows {
-			button {
-				width: 24px;
-				height: 22px;
-				background-repeat: no-repeat;
-				background-position: center center;
-			}
-			&-left {
-				float: left;
-				margin-right: 10px;
-				background-image: url('../img/main-menu-slider__arrow-left.png');
-				&:hover {
-					background-image: url('../img/main-menu-slider__arrow-left--active.png');
-				}
-			}
-			&-right {
-				float: right;
-				background-image: url('../img/main-menu-slider__arrow-right.png');
-				&:hover {
-					background-image: url('../img/main-menu-slider__arrow-right--active.png');
-				}
-			}
+			
 		}
 	}
 }
