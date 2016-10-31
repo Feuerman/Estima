@@ -20,7 +20,7 @@ body
 		header.header.main-row
 			.container
 				.site-logo.dark-theme
-					a(href="/")
+					a(href="/pages.html")
 				.header__panel
 					button.icon.icon__auth.dark-theme
 					button.icon.icon__search.dark-theme.btn-modal(data-target-modal="search-modal")
@@ -69,7 +69,8 @@ body
 						a.social__item.social__item--youtube(href="#")
 	include templates/search-modal.jade
 	include templates/main-menu/modal.jade
-	.main-bottom-nav__next-page.animate
+	.main-bottom-nav-page.main-bottom-nav__next-page.animate.active-nav
+	.main-bottom-nav-page.main-bottom-nav__prev-page
 		//- .mouse_scroll
 		//- 	.mouse
 		//- 		.wheel

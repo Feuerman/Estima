@@ -1,0 +1,73 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content.inner-content--border-top
+				.container
+					.page-title PORTFOLIO				
+				.container
+					.portfolio
+						.col-sm-6.portfolio-item
+							a.portfolio-item__image(href="#")
+								img(src="/img/portfolio-1.jpg", alt="")
+							.portfolio-item__title
+								p.portfolio-item__name Name of item
+								p.portfolio-item__collection Stone
+						.col-sm-6.portfolio-item
+							a.portfolio-item__image(href="#")
+								img(src="/img/portfolio-2.jpg", alt="")
+							.portfolio-item__title
+								p.portfolio-item__name One more name of the item
+								p.portfolio-item__collection Marble
+						.col-sm-6.portfolio-item
+							a.portfolio-item__image(href="#")
+								img(src="/img/portfolio-3.jpg", alt="")
+							.portfolio-item__title
+								p.portfolio-item__name ESTIMA name of the item
+								p.portfolio-item__collection Stone
+						.col-sm-6.portfolio-item
+							a.portfolio-item__image(href="#")
+								img(src="/img/portfolio-4.jpg", alt="")
+							.portfolio-item__title
+								p.portfolio-item__name One more name of the item
+								p.portfolio-item__collection Marble
+						.col-sm-6.portfolio-item
+							a.portfolio-item__image(href="#")
+								img(src="/img/portfolio-5.jpg", alt="")
+							.portfolio-item__title
+								p.portfolio-item__name ESTIMA name of the item copy
+								p.portfolio-item__collection Stone
+						.col-sm-6.portfolio-item
+							a.portfolio-item__image(href="#")
+								img(src="/img/portfolio-6.jpg", alt="")
+							.portfolio-item__title
+								p.portfolio-item__name One more name of the item copy
+								p.portfolio-item__collection Marble
+				.hr
+				.container.text-center
+							button.btn--show-more Show more
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				include templates/footer-inner.jade				
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade

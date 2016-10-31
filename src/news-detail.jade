@@ -1,0 +1,100 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content.inner-content--border-top
+				.container
+					.page-title NEWS & EVENTS				
+				.container
+					.news-tabs
+						button.btn-menu-dropdown.visible-xs ALL
+						ul.tabs.menu-dropdown
+							li.tabs__item 
+								a(href="#") ALL
+							li.tabs__item 
+								a(href="#") NEWS
+							li.tabs__item 
+								a(href="#") EVENTS
+							li.tabs__item 
+								a(href="#") ARCTICLES
+							li.tabs__item 
+								a(href="#") PROMO
+							li.tabs__item 
+								a(href="#") EXHIBITION
+					.hr
+					.news-detail
+						.news-detail__title Estima ceramica at The Global Tile & Stone Experience - COVERINGS 2016, April 18-21 at McCormick Place
+						.news-item__info
+							span.news-item__info--category News
+							span.news-item__info--date 22 August, 2016
+						.news-detail-images.pull-left
+							.news-detail-slider
+								img(src="img/news__detail.jpg", alt="")
+								img(src="img/news__detail.jpg", alt="")
+								img(src="img/news__detail.jpg", alt="")
+								img(src="img/news__detail.jpg", alt="")
+								img(src="img/news__detail.jpg", alt="")
+								img(src="img/news__detail.jpg", alt="")
+							.news-detail-slider-nav
+								.news-detail-slider-thumbs
+									.news-detail-slider-thumbs__image
+										img(src="img/news__detail-1.jpg", alt="")
+									.news-detail-slider-thumbs__image
+										img(src="img/news__detail-2.jpg", alt="")
+									.news-detail-slider-thumbs__image
+										img(src="img/news__detail-3.jpg", alt="")
+									.news-detail-slider-thumbs__image
+										img(src="img/news__detail-4.jpg", alt="")
+									.news-detail-slider-thumbs__image
+										img(src="img/news__detail-5.jpg", alt="")
+									.news-detail-slider-thumbs__image
+										img(src="img/news__detail-1.jpg", alt="")
+								.news-detail-arrows.pull-right
+									button.arrow.arrow-prev
+									button.arrow.arrow-next
+						.news-detail-content
+							p ESTIMA Ceramica is glad to invite you to the Global Tile & Stone Experience COVERINGS 2016 which is to be held on April 18-21 at McCormick Place in Chicago!
+							p ESTIMA Ceramica is one of the largest producers of porcelain tile in Europe, with production capacity over 160,000 square feet a year.
+							p 
+								| Today our company is a reliable manufacturer and supplier for many trading and construction companies. Detailed information on COVERINGS 2016 is on the official site: 
+								a(href="http://www.coverings.com") www.coverings.com
+							p It will be a pleasure for us to present our company and acquaint with our production novelties!
+							p Coverings is the premier international trade fair and expo dedicated exclusively to showcasing the newest in ceramic tile and natural stone. It has grown to be the largest and most important show of its kind in the U.S., featuring exhibitors from more than 40 countries.
+							p ESTIMA Ceramica is glad to invite you to the Global Tile & Stone Experience
+							p COVERINGS 2016 which is to be held on April 18-21 at McCormick Place in Chicago! ESTIMA Ceramica is one of the largest producers of porcelain tile Europe, with production capacity over 160,000 square feet a year. Today our company a reliable manufacturer and supplier many trading and construction companies.
+							p 
+								| Detailed information on COVERINGS 2016 is on the official site: 
+								a(href="http://www.coverings.com") www.coverings.com  
+								| It will be a pleasure for us to present our company and acquaint with our production novelties!
+							p Coverings is the premier international trade fair and expo dedicated exclusively to showcasing the newest in ceramic tile and natural stone. It has grown to be the largest and most important show of its kind in the U.S., featuring exhibitors from more than 40 countries.
+				.hr
+				.container.share-bottom
+					img(src="/img/share-bottom.png", alt="")
+				.news-detail-bottom
+					.container
+						a.news-detail-bottom__link(href="/news.html") Back to list
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				include templates/footer-inner.jade				
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade
