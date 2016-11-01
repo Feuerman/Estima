@@ -91,3 +91,96 @@
 		background: url('../img/arrow__button-long--red.png') center center no-repeat;
 	}
 }
+
+.form-reg {
+	position: relative;
+	text-align: center;
+	.back-link {
+		top: 0;
+		left: 15px;
+	}
+	&__title {
+		margin-bottom: 40px;
+		font-size: 22px;
+		font-family: $primary-font-bold;
+	}
+	&__desc {
+		margin: 40px 0;
+		font-size: 16px;
+	}
+	&__row {
+		overflow: hidden;
+		margin-bottom: 50px;
+	}
+	input[type="text"], input[type="mail"] {
+		width: 48%;
+		margin-top: 30px;
+		padding: 15px 20px;
+		background: rgb(247, 247, 247);
+		border: 1px rgb(229, 229, 229) solid;		
+	}
+	input ~ input {
+		margin-left: 3%;
+	}
+	input[type="submit"] {
+		max-width: 95%;
+		padding: 15px 40px;
+		background: rgb(215, 3, 27);
+		border: none;
+		border-radius: 40px;
+		font-size: 18px;
+		font-family: $primary-font-bold;
+		letter-spacing: 4px;
+		color: rgb(255, 255, 255);
+		outline: none;
+		text-transform: uppercase;
+		transition: all 0.3s ease-in-out;
+		&.disabled {
+			background: rgb(189, 189, 189);
+		}
+	}
+	&-tizer {
+		overflow: hidden;
+		cursor: pointer;
+		position: relative;
+		padding-top: 25px;
+		padding-bottom: 35px;
+		border: 1px rgb(215, 215, 215) solid;
+		&__image {
+			height: 75px;
+			line-height: 75px;
+			margin-bottom: 30px;
+			img {
+			}
+		}
+		&__desc {
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+		&__popup {
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 0;
+			padding: 15px 15px 0 15px;
+			background: rgb(200, 3, 26);
+			transform: scale(2, 2);
+			transition: all 0.3s ease-in-out;
+			opacity: 0;
+			p {
+				color: rgb(255, 255, 255);
+			}
+			.form-reg-tizer__desc {
+				width: 90%;
+				position: absolute;
+				bottom: 35px;
+				text-align: center;
+				color: rgb(255, 255, 255);
+			}
+		}
+		.active &__popup {
+			transform: scale(1, 1);
+			opacity: 1;
+		}
+	}
+}

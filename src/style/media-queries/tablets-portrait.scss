@@ -1,4 +1,17 @@
 @media screen and (max-width: 768px) {
+	.bg-search {
+		padding-right: 30px;
+		background: none;
+		font-size: 22px;
+		line-height: 26px;
+		font-family: $primary-font-bold;
+	}
+	.list-half-children {
+		li {
+			width: 100%;
+			margin-right: 0;			
+		}
+	}
 	.cart-slider {
 		&-thumb {
 			.slick-list {
@@ -386,6 +399,26 @@
 			}
 		}
 	}
+	.form-reg {		
+		input[type="text"], input[type="mail"] {
+			width: 100%;
+		}
+		input ~ input {
+			margin-top: 30px;
+			margin-left: 0;
+		}
+		input[type="submit"] {
+			padding: 15px 70px;
+			background: rgb(215, 3, 27);
+			border: none;
+			border-radius: 40px;
+			font-size: 18px;
+			font-family: $primary-font-bold;
+			letter-spacing: 4px;
+			color: rgb(255, 255, 255);
+			outline: none;
+		}
+	}
 	.menu-bottom {
 		display: none;
 	}
@@ -526,7 +559,6 @@
 			&-wrap {
 				padding-bottom: 0;
 				.container {
-					padding: 0;
 				}
 			}		
 			&-bottom {
@@ -642,6 +674,11 @@
 					}
 				}				
 			}
+		}
+	}
+	.production-tizer {	
+		&__content {
+			padding: 20px 10px;
 		}
 	}	
 	.footer {

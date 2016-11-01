@@ -1,0 +1,55 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content
+				.personal
+					.container
+						.page-title.page-title--white SEARCH						
+				.personal-form-wrap
+					.container
+						.container--float.container--text-content
+							h2.bg-search Search Results for "Documentation"
+							.hr
+							ul.list-search
+								li
+									span.list-search__title Technical characteristics documentation
+									.list-search__text
+										a(href="/catalog.html") Catalogue
+								li
+									span.list-search__title Advanced SEO from Trighton Interactive Can Get Your Website
+									.list-search__text
+										a(href="/documents.html") Documents
+								li
+									span.list-search__title Digital Marketing Results 400% Increased Clicks Year-Over-Year 1st Google Page Ranking 
+									.list-search__text
+										a(href="/portfolio.html") Portfolio
+								li
+									span.list-search__title Law firm seo Case Study: CHARLES JUNTIKKA & ASSOCIATES Leading
+									.list-search__text
+										a(href="/history.html") About
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				include templates/footer-inner.jade				
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade

@@ -29,7 +29,6 @@ body {
 
 .container--float {
     margin-top: -180px;
-    padding: 40px 40px 55px 40px;
     background: white;
 }
 
@@ -1170,6 +1169,28 @@ button {
     color: black;
 }
 
+.btn--personal {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    padding: 12px 60px 12px 50px;
+    border: 1px #d7031b solid;
+    border-radius: 30px;
+    color: #d7031b;
+    font-size: 14px;
+    font-family: FreeSetBold, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.btn--personal i {
+    position: absolute;
+    top: 13px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    background: url("../img/arrow__button--red.png") 0 0/100% 100% no-repeat;
+}
+
 .icon {
     display: inline-block;
     background-repeat: no-repeat;
@@ -1576,6 +1597,116 @@ input {
     background: url("../img/arrow__button-long--red.png") center center no-repeat;
 }
 
+.form-reg {
+    position: relative;
+    text-align: center;
+}
+
+.form-reg .back-link {
+    top: 0;
+    left: 15px;
+}
+
+.form-reg__title {
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-family: FreeSetBold, Arial, Helvetica, sans-serif;
+}
+
+.form-reg__desc {
+    margin: 40px 0;
+    font-size: 16px;
+}
+
+.form-reg__row {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.form-reg input[type="text"], .form-reg input[type="mail"] {
+    width: 48%;
+    margin-top: 30px;
+    padding: 15px 20px;
+    background: #f7f7f7;
+    border: 1px #e5e5e5 solid;
+}
+
+.form-reg input ~ input {
+    margin-left: 3%;
+}
+
+.form-reg input[type="submit"] {
+    max-width: 95%;
+    padding: 15px 40px;
+    background: #d7031b;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-family: FreeSetBold, Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+    color: white;
+    outline: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-reg input[type="submit"].disabled {
+    background: #bdbdbd;
+}
+
+.form-reg-tizer {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    border: 1px #d7d7d7 solid;
+}
+
+.form-reg-tizer__image {
+    height: 75px;
+    line-height: 75px;
+    margin-bottom: 30px;
+}
+
+.form-reg-tizer__desc {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.form-reg-tizer__popup {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 15px 0 15px;
+    background: #c8031a;
+    -webkit-transform: scale(2, 2);
+    transform: scale(2, 2);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.form-reg-tizer__popup p {
+    color: white;
+}
+
+.form-reg-tizer__popup .form-reg-tizer__desc {
+    width: 90%;
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+    color: white;
+}
+
+.active .form-reg-tizer__popup {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
 .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
     border-radius: 0;
 }
@@ -1663,24 +1794,17 @@ a:focus {
     border-bottom: 1px #b7b7b7 solid;
 }
 
+.full-width {
+    width: 100% !important;
+}
+
+.back-link {
+    position: absolute;
+}
+
 h2 {
     position: relative;
     margin-bottom: 20px;
-}
-
-h2.bg-line {
-    font-size: 22px;
-    font-family: FreeSetBold, Arial, Helvetica, sans-serif;
-}
-
-h2.bg-line::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 100px;
-    height: 1px;
-    background: #c8031a;
 }
 
 p {
@@ -1717,6 +1841,50 @@ ul li {
     left: 0;
     top: 12px;
     background: black;
+}
+
+.list-search {
+    padding-left: 15px;
+    margin: 0;
+    list-style-type: decimal;
+    color: #9c9c9c;
+}
+
+.list-search li {
+    margin-bottom: 30px;
+}
+
+.list-search__title {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.list-search a {
+    font-size: 14px;
+    color: #c8031a;
+}
+
+.bg-line {
+    font-size: 22px;
+    font-family: FreeSetBold, Arial, Helvetica, sans-serif;
+}
+
+.bg-line::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100px;
+    height: 1px;
+    background: #c8031a;
+}
+
+.bg-search {
+    padding-right: 30px;
+    background: url("../img/icon__search--black.png") right center no-repeat;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: FreeSetBold, Arial, Helvetica, sans-serif;
 }
 
 .p-title {
@@ -1852,10 +2020,12 @@ ul li {
 }
 
 .page-title {
-    display: inline-block;
+    position: relative;
+    display: block;
     margin-bottom: 40px;
     font-size: 38px;
     font-family: FreeSetBold, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 .page-title--white {
@@ -3810,7 +3980,13 @@ ul li {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 170px;
+}
+
+.production-tizer:last-child {
+    margin-bottom: 30px;
 }
 
 .production-tizer::after {
@@ -3825,11 +4001,12 @@ ul li {
 }
 
 .production-tizer__image {
+    overflow: hidden;
     width: 50%;
 }
 
 .production-tizer__image img {
-    width: 100%;
+    min-width: 100%;
 }
 
 .production-tizer__content {
@@ -3857,6 +4034,74 @@ ul li {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
+}
+
+.question {
+    padding: 0 !important;
+    border: 1px #ebebeb solid;
+}
+
+.question-item ~ .question-item {
+    border-top: 1px #ebebeb solid;
+}
+
+.question-item:nth-child(even) {
+    background: #fcfcfc;
+}
+
+.question-item__title {
+    cursor: pointer;
+    position: relative;
+    padding: 25px 50px;
+    font-size: 16px;
+    background: url("../img/icon__question.png") 15px 23px no-repeat;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.question-item__trigger {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    border: 1px #a0a0a0 solid;
+    border-radius: 50%;
+    background: url("../img/arrow__select--down.png") center center no-repeat;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.question-item__content {
+    overflow: hidden;
+    max-height: 0px;
+    padding: 0 50px 0 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.question-item__content p {
+    color: #6c6c6c;
+    line-height: 20px;
+}
+
+.question-item.active .question-item__title {
+    font-family: FreeSetBold, Arial, Helvetica, sans-serif;
+    background-image: url("../img/icon__question--active.png");
+}
+
+.question-item.active .question-item__trigger {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.question-item.active .question-item__content {
+    padding: 10px 50px 30px 50px;
+    max-height: 999px;
 }
 
 .share-block {
@@ -4079,6 +4324,10 @@ ul li {
 }
 
 @media screen and (max-width: 1280px) {
+    h2.bg-line::before {
+        display: none;
+    }
+
     .btn-br {
         width: auto;
         padding: 13px;
@@ -4468,6 +4717,25 @@ ul li {
         width: auto;
     }
 
+    .production-tizer__image {
+        width: 100%;
+    }
+
+    .production-tizer__image img {
+        width: 100%;
+    }
+
+    .production-tizer__content {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .production-tizer:nth-child(odd) .production-tizer__content {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
     .copyright {
         -webkit-transform: rotate(0);
         transform: rotate(0);
@@ -4501,9 +4769,64 @@ ul li {
         letter-spacing: 0;
         font-size: 13px;
     }
+
+    .form-reg-tizer {
+        margin-bottom: 30px;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .form-reg-tizer__image {
+        display: inline-block;
+        width: 100px;
+        float: left;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .form-reg-tizer__desc {
+        margin-top: 30px;
+    }
+
+    .form-reg-tizer__popup {
+        clear: both;
+        position: relative;
+        height: auto;
+        background: none;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+    }
+
+    .form-reg-tizer__popup p {
+        color: black;
+    }
+
+    .form-reg-tizer__popup .form-reg-tizer__desc {
+        display: none;
+    }
+
+    .form-reg-tizer.active {
+        border-color: #c8031a;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .bg-search {
+        padding-right: 30px;
+        background: none;
+        font-size: 22px;
+        line-height: 26px;
+        font-family: FreeSetBold, Arial, Helvetica, sans-serif;
+    }
+
+    .list-half-children li {
+        width: 100%;
+        margin-right: 0;
+    }
+
     .cart-slider-thumb .slick-list {
         display: none;
     }
@@ -4919,6 +5242,27 @@ ul li {
         bottom: 30px;
     }
 
+    .form-reg input[type="text"], .form-reg input[type="mail"] {
+        width: 100%;
+    }
+
+    .form-reg input ~ input {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .form-reg input[type="submit"] {
+        padding: 15px 70px;
+        background: #d7031b;
+        border: none;
+        border-radius: 40px;
+        font-size: 18px;
+        font-family: FreeSetBold, Arial, Helvetica, sans-serif;
+        letter-spacing: 4px;
+        color: white;
+        outline: none;
+    }
+
     .menu-bottom {
         display: none;
     }
@@ -5073,10 +5417,6 @@ ul li {
         padding-bottom: 0;
     }
 
-    .personal-form-wrap .container {
-        padding: 0;
-    }
-
     .personal-form-bottom .col-sm-6 {
         text-align: center;
     }
@@ -5205,6 +5545,10 @@ ul li {
         background: #b5b5b5;
     }
 
+    .production-tizer__content {
+        padding: 20px 10px;
+    }
+
     .footer-inner .subscribe, .footer-main .subscribe {
         z-index: 100;
         position: relative;
@@ -5232,6 +5576,17 @@ ul li {
 }
 
 @media screen and (max-width: 480px) {
+    .container--float {
+        margin-top: -180px;
+        padding: 20px 10px;
+        background: white;
+    }
+
+    .container--text-content {
+        padding: 20px 10px;
+        background: white;
+    }
+
     *[class*="col-"] {
         padding-right: 10px;
         padding-left: 10px;
@@ -5418,6 +5773,11 @@ ul li {
         order: -1;
         margin-bottom: 30px;
         text-align: left;
+    }
+
+    .form-reg input[type="submit"] {
+        width: 90%;
+        padding: 15px 0;
     }
 
     .visible-xss {

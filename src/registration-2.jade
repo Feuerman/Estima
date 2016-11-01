@@ -1,0 +1,59 @@
+include templates/head.jade
+include templates/preloader.jade
+body
+	.inner-wrapper
+		include templates/header.jade
+		section.inner-content
+				.personal
+					.container
+						.page-title.page-title--white 
+							| Forgot your password?	
+							button.btn--personal.hidden-xs
+								| LOG IN
+								i
+				.personal-form-wrap
+					.container
+						.container--float.container--text-content
+							.row
+								form.form-reg
+									a.arrow.arrow-prev.back-link(href="/registration.html")
+									.form-reg__title Account registration
+									.form-reg__row
+										.col-md-4.col-sm-6
+											input.full-width(type="text" placeholder="First name*")
+										.col-md-4.col-sm-6
+											input.full-width(type="text" placeholder="Last name*")
+										.col-md-4.col-sm-6
+											input.full-width(type="mail" placeholder="E-mail address*")
+										.col-md-4.col-sm-6
+											input.full-width(type="text" placeholder="Phone*")
+										.col-md-4.col-sm-6
+											input.full-width(type="text" placeholder="City*")
+										.col-md-4.col-sm-6
+											input.full-width(type="text" placeholder="Comapny*")
+									.form-reg__row
+										input.form-reg-submit(type="submit" value="REGISTRATION")
+				.menu-bottom-inner-wrap.hidden-xs
+					.container
+						.row
+							ul.menu-bottom.menu-bottom-inner
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Catalogue
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Documents
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Portfolio
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") News&Events
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") About
+								li.menu-bottom__sep
+								li.menu-bottom__item
+									a.menu-bottom__link(href="#") Contacts
+				include templates/footer-inner.jade				
+	include templates/search-modal.jade
+	include templates/main-menu/modal.jade

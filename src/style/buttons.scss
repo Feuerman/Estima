@@ -152,4 +152,24 @@ button {
 	    line-height: 1;
 	    color: black;
 	}
+	&--personal {
+		position: absolute;
+		right: 0;
+		top: 0px;
+		padding: 12px 60px 12px 50px;
+		border: 1px rgb(215, 3, 27) solid;
+		border-radius: 30px;
+		color: rgb(215, 3, 27);
+		font-size: 14px;
+		font-family: $primary-font-bold;
+		text-transform: uppercase;
+		i {
+			position: absolute;
+			top: 13px;
+			right: 30px;
+			width: 15px;
+			height: 15px;
+			background: url('../img/arrow__button--red.png') 0 0 / 100% 100% no-repeat;
+		}
+	}
 }

@@ -1,4 +1,15 @@
 @media screen and (max-width: 480px) {
+	.container {
+		&--float {
+			margin-top: -180px;
+			padding: 20px 10px;
+			background: rgb(255, 255, 255);
+		}
+		&--text-content {		
+			padding: 20px 10px;
+			background: rgb(255, 255, 255);
+		}
+	}
 	*[class*="col-"] {
 		padding-right: 10px;
 		padding-left: 10px;
@@ -166,6 +177,12 @@
 			margin-bottom: 30px;
 			text-align: left;
 		}
+	}
+	.form-reg {		
+		input[type="submit"] {
+			width: 90%;
+			padding: 15px 0;			
+		}		
 	}	
 	.visible-xss {
 		display: block!important;
