@@ -1,0 +1,418 @@
+.row {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+.bg_hatch {
+	text-align: center;
+	padding: 10px 20px;
+	background: url('../img/bg__paragraph.png') center top / cover no-repeat;
+}
+
+.landing-block__title {
+	padding-top: 50px;
+	padding-bottom: 40px;
+	font-size: 35px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.landing_block_discount {
+	background: rgb(246, 208, 0) url('../img/bg__discount.png') center center / auto 100% no-repeat;
+	border-top: 2px rgb(204, 204, 204) solid;
+}
+.landing_block_discount .width {
+	display: table;	
+	overflow: hidden;
+}
+.landing_discount_desc {
+	overflow: hidden;
+	display: table-cell;
+	padding: 40px 0;
+	width: 50%;
+	color: rgb(0, 0, 0);	
+}
+.landing_discount_desc p {
+	font-weight: bold;
+	font-size: 70px;
+	line-height: 70px;
+	text-transform: uppercase;
+}
+.landing_discount_desc span {
+	font-size: 30px;
+	line-height: 30px;
+}
+.landing_discount_desc p span {
+	font-size: 125px;
+	line-height: 125px;
+}
+.landing_discount_action {
+	position: relative;
+	display: table-cell;
+	vertical-align: bottom;
+	text-align: right;
+	width: 50%;
+}
+.landing_discount_action button {
+	cursor: pointer;
+	outline: none;
+	margin-bottom: 100px;
+	padding: 18px 60px;
+	border: none;
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.landing_discount_action .link-pdf {
+	display: block;
+	margin-bottom: 20px;
+	color: rgb(0, 0, 0);
+	font-style: italic;
+}
+.landing_discount_action .link-pdf i {
+	margin-left: 5px;
+}
+
+.landing_block_rent {
+	background: rgb(246, 208, 0) url('../img/clouds.gif') calc(50% - 320px) center no-repeat;
+	height: 370px;
+}
+.landing_block_rent .width {
+	display: table;
+	height: 100%;
+}
+.landing_rent_col {
+	display: table-cell;
+	width: 50%;
+	padding: 10px 0;
+	vertical-align: middle;
+	color: rgb(0, 0, 0);	
+}
+.landing_rent_desc {	
+	color: rgb(0, 0, 0);
+}
+.landing_rent_desc span {
+	display: block;
+	margin-bottom: 15px;
+	font-size: 21px;
+	line-height: 30px;
+}
+.landing_rent_desc a {
+	display: inline-block;
+	padding-top: 25px;
+	color: rgb(0, 0, 0);
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.landing_rent_desc a i {
+	margin-left: 10px;
+}
+.landing_rent_col button {
+	cursor: pointer;
+    outline: none;
+    padding: 12px 20px;
+    border: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.landing_rent_col .landing_title {
+	padding-top: 0;
+}
+
+.landing_block_advantages {
+	background: url('../img/pencil-shavings_full.jpg') center bottom no-repeat;
+}
+.landing_advantages {
+	margin-top: 30px;
+}
+.landing_advantages_col {
+	position: relative;
+	width: 50%;
+	float: left;
+}
+.landing_advantages_col-right {
+	padding-top: 100px;	
+}
+.landing_advantages_col-right:after {
+	position: absolute;
+}
+.landing_advantages_item {
+	position: relative;
+	margin-bottom: 65px;
+	padding-right: 40px;
+}
+.landing_advantages_col-right .landing_advantages_item {
+	padding-left: 30px;
+}
+.landing_advantages_item--border {
+	padding-top: 70px;
+	padding-bottom: 25px;
+	border: 2px rgb(58, 109, 178) dashed;
+}
+.landing_advantages_pencil {
+	position: absolute;
+	top: -340px;
+	left: 110px;
+}
+.landing_advantages_unique {
+	position: absolute;
+	left: -2px;
+	top: 20px;
+	width: 270px;
+	height: 30px;
+	padding-left: 30px;
+	background: url('../img/bg__advantages-flag.png') 0 0 no-repeat;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.landing_advantages_title {
+	margin-bottom: 20px;
+	color: rgb(58, 109, 178);
+}
+.landing_advantages_title span {
+	position: relative;
+	top: -5px;
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.landing_advantages_title i {
+	width: 50px;
+	text-align: center;
+	font-size: 40px;
+}
+.landing_advantages_text {
+	
+}
+.landing_advantages_text p {
+	margin: 0;
+	line-height: 20px;
+}
+
+.landing_block_demo {
+	background: url('../img/bg__demonstration.jpg') right bottom no-repeat;
+}
+.landing_demo_title {
+	padding-top: 70px;
+	margin-bottom: 40px;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+.landing_demo_text {
+	width: 40%;
+	margin-bottom: 40px;
+}
+
+.demo_btn {
+	margin-bottom: 60px;
+	padding: 15px 40px;
+}
+
+.price_block_wrap {
+	overflow: hidden;
+}
+
+.table_compare {
+	width: 100%;
+	border: none;
+}
+.table_compare tr:not(:first-child) {
+	border-top: 1px rgb(218, 218, 218) solid;
+}
+.table_compare td, th {
+	padding: 15px 20px;
+}
+.table_compare td {}
+.table_compare th {
+	padding-bottom: 30px;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.table_delivery-options {
+	width: 100%;
+	margin-bottom: 30px;
+	border: none;
+}
+.table_delivery-options tr {
+}
+.table_delivery-options tr:hover {
+	background: rgb(239, 239, 239);
+}
+.table_delivery-options tr:hover .buy {
+	opacity: 1;
+}
+.table_delivery-options td {
+	font-size: 17px;
+	padding: 15px 20px;
+}
+.table_delivery-options td:not(:first-child) {
+	min-width: 100px;
+}
+.table_delivery-options .time {
+	background: none;
+	color: rgb(47, 60, 164);
+	font-weight: bold;
+}
+.table_delivery-options .time:before {
+	display: none;
+}
+.table_delivery-options .price {
+	font-weight: bold;
+}
+.table_delivery-options .buy {
+	opacity: 0;
+	background: rgb(47, 60, 164);
+	padding: 0;
+}
+.table_delivery-options .buy button {
+	cursor: pointer;
+	padding: 15px 30px;
+	display: block;
+	width: 100%;
+	border: none;	
+	background: rgb(47, 60, 164);
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.list--style-check {
+	margin-bottom: 50px;
+	list-style-type: none;
+}
+.list--style-check > li {
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+	min-height: 40px;
+	margin-bottom: 55px;
+	padding: 10px 50px 0 50px;
+	background: url('../img/bg__check.png') 0 0 no-repeat;
+	font-size: 21px;
+	line-height: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.mark-check {
+	background: url('../img/check_item.png') center center no-repeat;
+}
+.mark-krest {
+	opacity: 0.2;
+	background: url('../img/krest_item.png') center center no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+	.wrapper {
+		overflow: hidden;
+	}
+	.landing_block_demo {
+		background: url('../img/bg__demonstration.jpg') center bottom no-repeat;
+	}
+}
+
+@media screen and (max-width: 991px) {	
+	.list--style-check > li {
+		width: 100%;
+		padding-right: 0;
+	}
+	.table_delivery-options .time {
+		display: none;
+	}
+	.landing_advantages_pencil {
+		display: none;
+	}
+	.landing_demo_title {
+		text-shadow: 1px 1px 1px rgb(255, 255, 255);
+		font-size: 50px;
+		line-height: 50px;
+	}	
+}
+
+@media screen and (max-width: 768px) {	
+	.landing-block__title {
+		padding-top: 50px;
+		padding-bottom: 40px;
+		font-size: 35px;
+		line-height: 36px;
+		font-weight: bold;
+	}
+	.landing_block_discount {
+		background: rgb(246, 208, 0);
+	}
+	.landing_discount_desc, .landing_discount_action {
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.landing_discount_desc {
+		margin-bottom: 30px;
+	}
+	.landing_discount_desc .float-left {
+		float: none;
+	}
+	.landing_discount_action button {
+		margin-bottom: 50px;
+	}
+
+	.table_delivery-options td {
+		font-size: 15px;
+		padding: 10px;
+	}
+	.table_delivery-options .buy button {
+		cursor: pointer;
+		padding: 10px;
+		display: block;
+		width: 100%;
+		border: none;	
+		background: rgb(47, 60, 164);
+		color: rgb(255, 255, 255);
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}	
+}
+
+@media screen and (max-width: 600px) {
+	.landing_block_compare {
+		display: none;
+	}
+
+	.landing_demo_title {
+		text-shadow: none;
+		font-size: 35px;
+		line-height: 35px;
+	}	
+	.landing_block_demo  {
+		background: none;
+	}
+	.landing_demo_text {	
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.list--style-check li {
+		font-size: 16px;
+	}	
+	.row {
+		margin: 0;
+	}
+}

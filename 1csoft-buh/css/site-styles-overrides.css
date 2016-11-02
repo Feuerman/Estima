@@ -1,0 +1,38 @@
+.width {
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+.link-switch--black {
+	background: rgb(0, 0, 0);
+}
+.link-switch--black a {
+	color: rgb(255, 255, 255);
+}
+.landing_descr_block {
+	margin: 0;
+	padding-bottom: 30px;
+}
+
+.landing_title {
+	line-height: 40px;
+}
+.landing_descr_block .descr_text {
+	padding: 0;
+}
+.landing_descr_block.active .descr_text {
+	border: none;
+}
+.landing_descr_block .title > span > span:not(.ico_arrow) {
+	border-bottom: 1px solid #323694;
+}
+.descr_text ul {
+	margin: 25px 0;
+}
+.descr_text ul li {
+	margin-bottom: 10px;
+	padding-left: 30px;
+}
+.descr_text p {
+	margin-bottom: 15px;
+}
