@@ -4,8 +4,8 @@ body
 	.main-page-bg-slider
 		.main-page-bg-slider__item.main-page-bg__changeImage(data-current-page="main" style="background-image: url('img/bg__main--first.jpg');")
 		.main-page-bg-slider__item(data-current-page="main-catalog")
-		.main-page-bg-slider__item(data-current-page="main-documents" style="background-image: url('img/bg__main--production.jpg');")
-			video(id="bgVideo" width='100%', height='100%', controls='none', poster='img/bg__main--production.jpg', loop)
+		.main-page-bg-slider__item(data-current-page="main-documents" style="background:rgb(0, 0, 0);")
+			video(class="bg-video" width='100%', height='100%', controls='none', poster='img/bg__main--production.jpg', loop)
 				source(src='video/bg-video.mp4', type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
 			.bg-video-overlay
 		.main-page-bg-slider__item(data-current-page="main-news")
@@ -22,7 +22,7 @@ body
 				.site-logo.dark-theme
 					a(href="/pages.html")
 				.header__panel
-					button.icon.icon__auth.dark-theme
+					button.icon.icon__auth.dark-theme.btn-modal(data-target-modal="login-modal")
 					button.icon.icon__search.dark-theme.btn-modal(data-target-modal="search-modal")
 					button.select-language rus
 					.main-menu-panel
@@ -63,14 +63,21 @@ body
 				.row
 					.col-xs-6
 						.copyright.dark-theme © Estima Company						
-					.col-xs-6.social.text-right
+					.col-xs-6.social.text-right.visible-sm.visible-xs
 						a.social__item.social__item--vk(href="#")
 						a.social__item.social__item--fb(href="#")
 						a.social__item.social__item--youtube(href="#")
 	include templates/search-modal.jade
 	include templates/main-menu/modal.jade
+	include templates/login-modal.jade
 	.main-bottom-nav-page.main-bottom-nav__next-page.animate.active-nav
 	.main-bottom-nav-page.main-bottom-nav__prev-page
-		//- .mouse_scroll
-		//- 	.mouse
-		//- 		.wheel
+	.social.social--fixed.hidden-sm.hidden-xs
+		a.social__item.social__item--vk(href="#")
+		a.social__item.social__item--fb(href="#")
+		a.social__item.social__item--youtube(href="#")
+	.bg-video-mobile.visible-md.visible-xs
+		video(class="bg-video" width='100%', height='100%', controls='none', poster='img/bg__main--production.jpg')
+			source(src='video/bg-video.mp4', type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+	.bgVideo-controll
+		button.bgVideo-controll__stop

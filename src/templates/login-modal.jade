@@ -1,0 +1,19 @@
+.modal-hidden
+	#login-modal
+		.container				
+			.col-sm-6.col-sm-offset-3
+				form.form-login
+					.box-modal_close
+					.form-login__title Log in
+					.form-login__body
+						.form-login__row
+							input.form-login__log(type="text" placeholder="Login" required)
+						.form-login__row							
+							input.form-login__psw(type="text" placeholder="Password" required)						
+						.form-login__row							
+							a(href="/password-recovery.html") Forgot your password?						
+						.form-login__row							
+							input(type="submit" value="Login")
+					.form-login__footer
+						p Do not have account ?
+						a(href="/registration.html") Registration

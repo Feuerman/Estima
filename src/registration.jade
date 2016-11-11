@@ -8,7 +8,7 @@ body
 					.container
 						.page-title.page-title--white 
 							| Forgot your password?	
-							button.btn--personal.hidden-xs
+							button.btn--personal.btn-modal.hidden-xs(data-target-modal="login-modal")
 								| LOG IN
 								i
 				.personal-form-wrap
@@ -68,3 +68,4 @@ body
 				include templates/footer-inner.jade				
 	include templates/search-modal.jade
 	include templates/main-menu/modal.jade
+	include templates/login-modal.jade

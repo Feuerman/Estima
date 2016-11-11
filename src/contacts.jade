@@ -113,13 +113,13 @@ body
 								.contacts-form__title.text-center Contact Us
 								.contacts-form__row
 									.col-sm-4.col-xs-12
-										input.contacts-form__input(type="text" placeholder="Alex Klopkol")
+										input.contacts-form__input(type="text" placeholder="Alex Klopkol" required)
 									.col-sm-4.col-xs-12
-										input.contacts-form__input(type="text" placeholder="Phone number")
+										input.contacts-form__input(type="text" placeholder="Phone number" required)
 									.col-sm-4.col-xs-12
-										input.contacts-form__input(type="text" placeholder="E-mail address")
+										input.contacts-form__input(type="mail" placeholder="E-mail address" required)
 								.contacts-form__row.col-xs-12
-									textarea.contacts-form__input(name="", cols="30", rows="2", placeholder="Message")
+									textarea.contacts-form__input(name="", cols="30", rows="2", placeholder="Message" required)
 								.contacts-form__row.text-center
 									input.contacts-form__submit(type="submit" value="SEND")
 				.menu-bottom-inner-wrap.hidden-xs
@@ -146,3 +146,4 @@ body
 				include templates/footer-inner.jade	
 	include templates/search-modal.jade
 	include templates/main-menu/modal.jade
+	include templates/login-modal.jade

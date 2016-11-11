@@ -6,6 +6,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="vendor/slick/slick.css">
 <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
 <link rel="stylesheet" href="css/style.min.css">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
@@ -13,6 +14,7 @@
 <script src="vendor/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="vendor/fancybox/jquery.fancybox.js"></script>
 <script src="js/common.js"></script>
 <div id="page-preloader"><span class="spinner"></span></div>
 <body>
@@ -21,7 +23,7 @@
       <div class="container">
         <div class="site-logo light-theme"><a href="/pages.html"></a></div>
         <div class="header__panel">
-          <button class="icon icon__auth light-theme"></button>
+          <button data-target-modal="login-modal" class="icon icon__auth light-theme btn-modal"></button>
           <button data-target-modal="search-modal" class="icon icon__search light-theme btn-modal"></button>
           <button class="select-language">rus</button>
           <div class="main-menu-panel">
@@ -114,28 +116,7 @@
                   <div class="news-item__text">
                     <p>International Construction and Interior Exhibition BATIMAT RUSSIA 2016!</p>
                   </div>
-                  <div class="news-item__info"><span class="news-item__info--category">News</span><span class="news-item__info--date">22 August, 2016</span></div>
-                </div></a></div>
-            <div class="col-md-6 news-item"><a href="/news-detail.html"><img src="/img/main-news__item-7.jpg" alt="" class="news-item__image">
-                <div class="news-item__content">
-                  <div class="news-item__text">
-                    <p>Birthday Celebrationof show-room ESTIMA Ceramic Studio Krasnodar!</p>
-                  </div>
-                  <div class="news-item__info"><span class="news-item__info--category">News</span><span class="news-item__info--date">22 August, 2016</span></div>
-                </div></a></div>
-            <div class="col-md-6 news-item"><a href="/news-detail.html"><img src="/img/main-news__item-8.jpg" alt="" class="news-item__image">
-                <div class="news-item__content">
-                  <div class="news-item__text">
-                    <p>International Construction and Interior Exhibition BATIMAT RUSSIA 2016!</p>
-                  </div>
-                  <div class="news-item__info"><span class="news-item__info--category">News</span><span class="news-item__info--date">22 August, 2016</span></div>
-                </div></a></div>
-            <div class="col-md-6 news-item"><a href="/news-detail.html"><img src="/img/main-news__item-8.jpg" alt="" class="news-item__image">
-                <div class="news-item__content">
-                  <div class="news-item__text">
-                    <p>International Construction and Interior Exhibition BATIMAT RUSSIA 2016!</p>
-                  </div>
-                  <div class="news-item__info"><span class="news-item__info--category">News</span><span class="news-item__info--date">22 August, 2016</span></div>
+                  <div class="news-item__info"><span class="news-item__info--category">News</span><span class="news-item__info--date">22 August, 2016							</span></div>
                 </div></a></div>
           </div>
         </div>
@@ -336,7 +317,30 @@
             <div class="row">
               <ul class="main-menu main-menu-lvl-1">
                 <li class="main-menu__item"><a href="/" class="main-menu__link">Main page</a></li>
-                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link--isChild">Catalogue</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link--isChild">Catalogue</a>
+                  <ul class="main-menu-sub hidden-lg hidden-md hidden-sm">
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Marble</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Stone</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Wood</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Cement</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Design</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Commercial</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Vertical</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Ceramic tile</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Decoration</a></li>
+                  </ul>
+                  <div class="main-menu-slider-mobile hidden-lg hidden-md hidden-sm">
+                    <div class="main-menu-slider-wrap">
+                      <div class="main-menu-slider"><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-2.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">LUX</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-2.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">LUX</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a></div>
+                      <div class="main-menu-slider-nav"><a href="#" class="btn--arrow-right pull-left">SEE ALL</a>
+                        <div class="main-menu-arrows pull-right">
+                          <button class="arrow arrow-prev"></button>
+                          <button class="arrow arrow-next"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
                 <li class="main-menu__item"><a href="#" class="main-menu__link">Documents</a></li>
                 <li class="main-menu__item"><a href="/portfolio.html" class="main-menu__link">Portfolio</a></li>
                 <li class="main-menu__item"><a href="/news.html" class="main-menu__link">News&Events</a></li>
@@ -371,6 +375,33 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hidden">
+    <div id="login-modal">
+      <div class="container">				
+        <div class="col-sm-6 col-sm-offset-3">
+          <form class="form-login">
+            <div class="box-modal_close"></div>
+            <div class="form-login__title">Log in</div>
+            <div class="form-login__body">
+              <div class="form-login__row">
+                <input type="text" placeholder="Login" required class="form-login__log">
+              </div>
+              <div class="form-login__row">							
+                <input type="text" placeholder="Password" required class="form-login__psw">
+              </div>
+              <div class="form-login__row">							<a href="/password-recovery.html">Forgot your password?						</a></div>
+              <div class="form-login__row">							
+                <input type="submit" value="Login">
+              </div>
+            </div>
+            <div class="form-login__footer">
+              <p>Do not have account ?</p><a href="/registration.html">Registration</a>
+            </div>
+          </form>
         </div>
       </div>
     </div>

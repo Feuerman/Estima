@@ -7,13 +7,7 @@ body {
 	font-family: $primary-font-regular;	
 }
 .ui-dialog-open {
-	overflow: visible !important;
 	width: auto;
-}
-
-.ui-dialog-open body {
-	margin-right: 17px;		
-	overflow: hidden!important;
 }
 
 .container {

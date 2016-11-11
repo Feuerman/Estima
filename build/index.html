@@ -6,6 +6,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="vendor/slick/slick.css">
 <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
 <link rel="stylesheet" href="css/style.min.css">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
@@ -13,14 +14,15 @@
 <script src="vendor/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="vendor/fancybox/jquery.fancybox.js"></script>
 <script src="js/common.js"></script>
 <div id="page-preloader"><span class="spinner"></span></div>
 <body>
   <div class="main-page-bg-slider">
     <div data-current-page="main" style="background-image: url('img/bg__main--first.jpg');" class="main-page-bg-slider__item main-page-bg__changeImage"></div>
     <div data-current-page="main-catalog" class="main-page-bg-slider__item"></div>
-    <div data-current-page="main-documents" style="background-image: url('img/bg__main--production.jpg');" class="main-page-bg-slider__item">
-      <video id="bgVideo" width="100%" height="100%" controls="none" poster="img/bg__main--production.jpg" loop>
+    <div data-current-page="main-documents" style="background:rgb(0, 0, 0);" class="main-page-bg-slider__item">
+      <video width="100%" height="100%" controls="none" poster="img/bg__main--production.jpg" loop class="bg-video">
         <source src="video/bg-video.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
       </video>
       <div class="bg-video-overlay"></div>
@@ -42,7 +44,7 @@
       <div class="container">
         <div class="site-logo dark-theme"><a href="/pages.html"></a></div>
         <div class="header__panel">
-          <button class="icon icon__auth dark-theme"></button>
+          <button data-target-modal="login-modal" class="icon icon__auth dark-theme btn-modal"></button>
           <button data-target-modal="search-modal" class="icon icon__search dark-theme btn-modal"></button>
           <button class="select-language">rus</button>
           <div class="main-menu-panel">
@@ -88,11 +90,7 @@
             <div class="main-page-content">
               <div class="main-catalog">
                 <div class="main-catalog-slider-wrap">
-                  <div class="main-catalog-slider">
-                    <div class="main-catalog-tizers"><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-1.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">BOLERO</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-2.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">CAPRI</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-3.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">DREAM</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-4.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">POLARIS</span></a></div>
-                    <div class="main-catalog-tizers"><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-3.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">DREAM</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-4.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">POLARIS</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-1.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">BOLERO</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-2.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">CAPRI</span></a></div>
-                    <div class="main-catalog-tizers"><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-2.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">CAPRI</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-3.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">DREAM</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-1.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">BOLERO								</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-4.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">POLARIS</span></a></div>
-                  </div>
+                  <div class="main-catalog-slider"><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-1.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">BOLERO</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-2.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">CAPRI</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-3.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">DREAM</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-4.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">POLARIS</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-3.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">DREAM</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-4.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">POLARIS</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-1.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">BOLERO</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-2.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">CAPRI</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-2.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">CAPRI</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-3.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">DREAM</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-1.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">BOLERO								</span></a><a href="#" class="main-catalog-tizers__item"><img src="img/catalog-4.jpg" alt="" class="main-catalog-tizers__image"><span class="main-catalog-tizers__title">POLARIS</span></a></div>
                   <div class="main-catalog-bottom-text">
                     <p>Marble is a metamorphic rock that may be foliated or non-foliated, composed	</p>
                   </div>
@@ -129,7 +127,7 @@
                     <p>Company Estima - a recognized domestic leader in the production of porcelain. We are the first manufacturer who has organized the production of this material in our country.</p>
                     <div><a href="#" class="btn--arrow-right">SEE ALL</a></div>
                   </div>
-                  <div class="main-production-desc__col main-production-desc__col--icon"><img src="/img/icon__youtube.png" alt="" class="bg-video-button"></div>
+                  <div class="main-production-desc__col main-production-desc__col--icon"><img src="/img/icon__youtube.png" alt="" class="bg-video-button"><span>click to play</span></div>
                 </div>
                 <div class="main-production-video">
                   <div class="main-production-video__item">
@@ -224,7 +222,7 @@
                           <div style="background-image: url('/img/news__header-2.jpg')" class="news-slider__image"></div>
                           <div class="news-slider__content">
                             <div class="news-slider__title">Promo START</div>
-                            <p>Conveniently, the raws divided into main raw additional</p>
+                            <p>Conveniently, the raws divided into main raw additional				</p>
                           </div>
                         </div>
                       </div>
@@ -394,7 +392,7 @@
                 </div>
               </div>
             </div>
-            <div class="main-bottom-nav"><a href="#" class="main-bottom-nav__all-items btn--arrow-right">SEE ALL</a>
+            <div class="main-bottom-nav"><a href="/news.html" class="main-bottom-nav__all-items btn--arrow-right">SEE ALL</a>
               <div class="main-bottom-nav__arrows">
                 <button data-action="prev" class="main-news-nav main-bottom-nav__arrows--left"></button>
                 <button data-action="next" class="main-news-nav main-bottom-nav__arrows--right"></button>
@@ -445,15 +443,15 @@
                 <div class="main-contacts-offices">
                   <div class="main-contacts-offices__item">
                     <div class="main-contacts-offices__title">Central office</div>
-                    <div class="main-contacts-offices__address">Mocsow, Nauchniy proezd 14A </div><a href="#" class="main-contacts-offices__link-map btn--arrow-right">SHOW MAP</a>
+                    <div class="main-contacts-offices__address">Mocsow, Nauchniy proezd 14A </div><a href="/contacts.html" class="main-contacts-offices__link-map btn--arrow-right">SHOW MAP</a>
                   </div>
                   <div class="main-contacts-offices__item">
                     <div class="main-contacts-offices__title">Product facility</div>
-                    <div class="main-contacts-offices__address">Noginsk, Betonnays str. 1</div><a href="#" class="main-contacts-offices__link-map btn--arrow-right">SHOW MAP</a>
+                    <div class="main-contacts-offices__address">Noginsk, Betonnays str. 1</div><a href="/contacts.html" class="main-contacts-offices__link-map btn--arrow-right">SHOW MAP</a>
                   </div>
                   <div class="main-contacts-offices__item">
                     <div class="main-contacts-offices__title">Product facility</div>
-                    <div class="main-contacts-offices__address">Samara, Mehanikov str. 20 </div><a href="#" class="main-contacts-offices__link-map btn--arrow-right">SHOW MAP</a>
+                    <div class="main-contacts-offices__address">Samara, Mehanikov str. 20 </div><a href="/contacts.html" class="main-contacts-offices__link-map btn--arrow-right">SHOW MAP</a>
                   </div>
                 </div>
               </div>
@@ -491,6 +489,24 @@
                   </div>
                   <div class="main-portfolio-slider__item">
                     <div class="main-portfolio-slider__image"><img src="/img/portfolio-1.jpg" alt="">
+                      <div class="main-portfolio-slider__desc">
+                        <div class="main-portfolio-slider__title">Project name on this site in two rows</div>
+                        <div class="main-portfolio-slider__text">It is ironic, but the artificial stone products are stronger and more durable natural, because on the surface of the material does not form chips, cracks and haze typical of natural granite.</div>
+                        <div><a href="#" class="btn--arrow-right">LEARN MORE</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-portfolio-slider__item">
+                    <div class="main-portfolio-slider__image"><img src="/img/portfolio-2.jpg" alt="">
+                      <div class="main-portfolio-slider__desc">
+                        <div class="main-portfolio-slider__title">Project name on this site in two rows</div>
+                        <div class="main-portfolio-slider__text">It is ironic, but the artificial stone products are stronger and more durable natural, because on the surface of the material does not form chips, cracks and haze typical of natural granite.</div>
+                        <div><a href="#" class="btn--arrow-right">LEARN MORE</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-portfolio-slider__item">
+                    <div class="main-portfolio-slider__image"><img src="/img/portfolio-2.jpg" alt="">
                       <div class="main-portfolio-slider__desc">
                         <div class="main-portfolio-slider__title">Project name on this site in two rows</div>
                         <div class="main-portfolio-slider__text">It is ironic, but the artificial stone products are stronger and more durable natural, because on the surface of the material does not form chips, cracks and haze typical of natural granite.</div>
@@ -548,7 +564,7 @@
           <div class="col-xs-6">
             <div class="copyright dark-theme">© Estima Company						</div>
           </div>
-          <div class="col-xs-6 social text-right"><a href="#" class="social__item social__item--vk"></a><a href="#" class="social__item social__item--fb"></a><a href="#" class="social__item social__item--youtube"></a></div>
+          <div class="col-xs-6 social text-right visible-sm visible-xs"><a href="#" class="social__item social__item--vk"></a><a href="#" class="social__item social__item--fb"></a><a href="#" class="social__item social__item--youtube"></a></div>
         </div>
       </div>
     </footer>
@@ -573,7 +589,30 @@
             <div class="row">
               <ul class="main-menu main-menu-lvl-1">
                 <li class="main-menu__item"><a href="/" class="main-menu__link">Main page</a></li>
-                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link--isChild">Catalogue</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link--isChild">Catalogue</a>
+                  <ul class="main-menu-sub hidden-lg hidden-md hidden-sm">
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Marble</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Stone</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Wood</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Cement</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Design</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Commercial</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Vertical</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Ceramic tile</a></li>
+                    <li class="main-menu-sub__item"><a href="#" class="main-menu-sub__link">Decoration</a></li>
+                  </ul>
+                  <div class="main-menu-slider-mobile hidden-lg hidden-md hidden-sm">
+                    <div class="main-menu-slider-wrap">
+                      <div class="main-menu-slider"><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-2.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">LUX</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-3.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">BRIGANTINA</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-2.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">LUX</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-4.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">TASTE</span></a><a href="#" class="main-menu-slider__item"><img src="img/main-menu__img-1.jpg" alt="" class="main-menu-slider__image"><span class="main-menu-slider__title">ARTWOOD NEW</span></a></div>
+                      <div class="main-menu-slider-nav"><a href="#" class="btn--arrow-right pull-left">SEE ALL</a>
+                        <div class="main-menu-arrows pull-right">
+                          <button class="arrow arrow-prev"></button>
+                          <button class="arrow arrow-next"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
                 <li class="main-menu__item"><a href="#" class="main-menu__link">Documents</a></li>
                 <li class="main-menu__item"><a href="/portfolio.html" class="main-menu__link">Portfolio</a></li>
                 <li class="main-menu__item"><a href="/news.html" class="main-menu__link">News&Events</a></li>
@@ -612,7 +651,42 @@
       </div>
     </div>
   </div>
+  <div class="modal-hidden">
+    <div id="login-modal">
+      <div class="container">				
+        <div class="col-sm-6 col-sm-offset-3">
+          <form class="form-login">
+            <div class="box-modal_close"></div>
+            <div class="form-login__title">Log in</div>
+            <div class="form-login__body">
+              <div class="form-login__row">
+                <input type="text" placeholder="Login" required class="form-login__log">
+              </div>
+              <div class="form-login__row">							
+                <input type="text" placeholder="Password" required class="form-login__psw">
+              </div>
+              <div class="form-login__row">							<a href="/password-recovery.html">Forgot your password?						</a></div>
+              <div class="form-login__row">							
+                <input type="submit" value="Login">
+              </div>
+            </div>
+            <div class="form-login__footer">
+              <p>Do not have account ?</p><a href="/registration.html">Registration</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="main-bottom-nav-page main-bottom-nav__next-page animate active-nav"></div>
-  <div class="main-bottom-nav-page main-bottom-nav__prev-page">
+  <div class="main-bottom-nav-page main-bottom-nav__prev-page"></div>
+  <div class="social social--fixed hidden-sm hidden-xs"><a href="#" class="social__item social__item--vk"></a><a href="#" class="social__item social__item--fb"></a><a href="#" class="social__item social__item--youtube"></a></div>
+  <div class="bg-video-mobile visible-md visible-xs">
+    <video width="100%" height="100%" controls="none" poster="img/bg__main--production.jpg" class="bg-video">
+      <source src="video/bg-video.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+    </video>
+  </div>
+  <div class="bgVideo-controll">
+    <button class="bgVideo-controll__stop"></button>
   </div>
 </body>

@@ -8,7 +8,7 @@ body
 					.container
 						.page-title.page-title--white 
 							| Forgot your password?	
-							button.btn--personal.hidden-xs
+							button.btn--personal.btn-modal.hidden-xs(data-target-modal="login-modal")
 								| LOG IN
 								i
 				.personal-form-wrap
@@ -20,17 +20,17 @@ body
 									.form-reg__title Account registration
 									.form-reg__row
 										.col-md-4.col-sm-6
-											input.full-width(type="text" placeholder="First name*")
+											input.full-width(type="text" placeholder="First name*" required)
 										.col-md-4.col-sm-6
-											input.full-width(type="text" placeholder="Last name*")
+											input.full-width(type="text" placeholder="Last name*" required)
 										.col-md-4.col-sm-6
-											input.full-width(type="mail" placeholder="E-mail address*")
+											input.full-width(type="mail" placeholder="E-mail address*" required)
 										.col-md-4.col-sm-6
-											input.full-width(type="text" placeholder="Phone*")
+											input.full-width(type="text" placeholder="Phone*" required)
 										.col-md-4.col-sm-6
-											input.full-width(type="text" placeholder="City*")
+											input.full-width(type="text" placeholder="City*" required)
 										.col-md-4.col-sm-6
-											input.full-width(type="text" placeholder="Comapny*")
+											input.full-width(type="text" placeholder="Comapny*" required)
 									.form-reg__row
 										input.form-reg-submit(type="submit" value="REGISTRATION")
 				.menu-bottom-inner-wrap.hidden-xs
@@ -57,3 +57,4 @@ body
 				include templates/footer-inner.jade				
 	include templates/search-modal.jade
 	include templates/main-menu/modal.jade
+	include templates/login-modal.jade

@@ -184,6 +184,81 @@
 			padding: 15px 0;			
 		}		
 	}	
+	.form-login {
+		&__title {
+		}
+		&__body {
+			padding: 20px;
+		}
+		&__row {
+			a {
+				color: rgb(131, 131, 131);
+				font-size: 14px;
+				&:hover, &:focus {
+					color: rgb(131, 131, 131);
+				}
+			}
+		}
+		input[type="text"] {
+			width: 100%;
+			margin-bottom: 20px;
+		    padding: 15px 45px 15px 20px;
+		    background-color: rgb(247, 247, 247);
+		    border: 1px #e5e5e5 solid;
+		    background-repeat: no-repeat;
+		    background-position: calc(100% - 15px) center;
+		}
+		&__log {
+			background-image: url('../img/icon__avatar.png');
+		}
+		&__psw {
+			background-image: url('../img/icon__password.png');
+		}
+		input[type="submit"] {
+			max-width: 95%;
+			margin-top: 35px;
+		    padding: 15px 65px;
+		    background: rgb(200, 30, 6);
+		    border: none;
+		    border-radius: 40px;
+		    font-size: 18px;
+		    font-family: FreeSetBold;
+		    letter-spacing: 4px;
+		    color: rgb(255, 255, 255);
+		    outline: none;
+		    text-transform: uppercase;
+		    transition: all 0.3s ease-in-out;	
+		}
+		&__footer {
+			padding: 30px 0;
+			background: rgb(247, 247, 247);
+			font-size: 16px;
+			font-weight: bold;
+			a {
+				color: rgb(200, 30, 6);
+				&:hover, &:focus {
+					color: rgb(200, 30, 6);
+				}
+			}
+		}
+		.box-modal_close {
+			top: 0;
+			right: 0!important;
+			height: 50px;
+			width: 50px;
+			background: rgb(200, 30, 6);
+			&::before, &::after {
+				width: 50%;
+				height: 2px;
+				border-radius: 0;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				margin: auto;
+			}
+		}
+	}
 	.visible-xss {
 		display: block!important;
 	}

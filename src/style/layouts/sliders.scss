@@ -136,6 +136,10 @@
 	}
 }
 
+.main-page-slider > .slick-list {
+	overflow: visible;
+}
+
 .company-slider {
 	&-wrap {
 		overflow: hidden;	
@@ -202,9 +206,11 @@
 	position: relative;
 	&.dark-theme li {
 		background: rgb(255, 255, 255);		
+		box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.5);
 	}
 	&.light-theme li {
 		background: rgb(183, 183, 183);
+		box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
 	}
 	.slick-dots {
 		position: absolute;
@@ -217,8 +223,8 @@
 		height: 100%;	
 		li {
 			display: block;
-			width: 10px;
-			height: 10px;
+			width: 12px;
+			height: 12px;
 			border-radius: 50%;
 			cursor: pointer;
 			transform: scale(1);	
@@ -256,6 +262,12 @@
 			justify-content: space-between;
 			align-items: center;
 		}	
+		.slick-slide {
+			margin: 0 15px;
+		}
+		.slick-list {
+			margin: 0 -15px;
+		}
 	}
 	&-tizers {		
 		display: flex;
@@ -263,9 +275,9 @@
 		justify-content: space-between;
 		&__item {
 			position: relative;
-			display: block;
+			display: block!important;
 			width: 49.5%;
-			margin-bottom: 1%;
+			margin-bottom: 30px;
 		}
 		&__image {
 			display: block;
@@ -299,6 +311,7 @@
 			line-height: 1;
 		}
 		&__list {
+			padding: 0;
 			list-style-type: none;
 		}
 		&__list-item {

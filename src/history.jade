@@ -4,7 +4,7 @@ body
 	.inner-wrapper
 		include templates/header.jade
 		section.inner-content
-				.history
+				.history(style="background-image: url('/img/bg__history-slider-full.jpg');")
 					.container
 						.page-title.page-title--white About
 						.tabs-panel
@@ -22,7 +22,7 @@ body
 								| Ask a Question
 								i
 					.container.history-slider-wrap
-						.history-slider-bg
+						.history-slider-bg.hidden
 							.history-slider-bg__item
 								img.hidden-sm.hidden-xs(src="/img/bg__history-slider-full.jpg", alt="")
 								img.visible-sm.visible-xs(src="/img/bg__history-slider.jpg", alt="")
@@ -129,3 +129,4 @@ body
 				include templates/footer-inner.jade				
 	include templates/search-modal.jade
 	include templates/main-menu/modal.jade
+	include templates/login-modal.jade
