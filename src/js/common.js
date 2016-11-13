@@ -319,7 +319,7 @@ $(document).ready(function(){
 	var currentClientWidth = $('body').width();
 
 	if (currentClientWidth > 992) {
-		onSliders();
+		// onSliders();
 
 		$('body').on('mousewheel', function(event) {
 		    if (event.deltaY > 0) {
