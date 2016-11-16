@@ -58,8 +58,8 @@ gulp.task('jade', function() {
 
 gulp.task('jsbuild', function () {
     gulp.src(path.src.js)
-        .pipe(uglify())
-        // .pipe(concat('app.min.js'))
+        // .pipe(uglify())
+        //.pipe(concat('app.min.js'))
         .pipe(gulp.dest(path.build.js))
         .pipe(reload({stream: true}));
 });
