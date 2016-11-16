@@ -4845,6 +4845,7 @@ ul li {
     }
 
     .main-page-slider__item {
+        display: block;
         height: auto;
         padding: 0;
     }
@@ -5239,6 +5240,10 @@ ul li {
 
     .form-reg-tizer.active {
         border-color: #c8031a;
+    }
+
+    .form-login {
+        margin-top: 30px;
     }
 }
 

@@ -124,6 +124,7 @@
 	}
 	.main-page-slider {
 		&__item {
+			display: block;
 			height: auto;
 			padding: 0;
 			&:first-child {
@@ -452,5 +453,8 @@
 				border-color: rgb(200, 3, 26);
 			}
 		}
+	}
+	.form-login {
+		margin-top: 30px;
 	}
 }

@@ -6,7 +6,8 @@ body
 		.main-page-bg-slider__item(data-current-page="main-catalog")
 		.main-page-bg-slider__item(data-current-page="main-documents" style="background:rgb(0, 0, 0);")
 			video(class="bg-video" width='100%', height='100%', controls='none', poster='img/bg__main--production.jpg', loop)
-				source(src='video/bg-video.mp4', type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+				source(src='video/bg-video.mp4', type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"')
+				source(src='video/bg-video.webm', type='video/webm;codecs="vp8, vorbis"')
 			.bg-video-overlay
 		.main-page-bg-slider__item(data-current-page="main-news")
 		.main-page-bg-slider__item(data-current-page="main-about")
@@ -78,6 +79,7 @@ body
 		a.social__item.social__item--youtube(href="#")
 	.bg-video-mobile.visible-md.visible-xs
 		video(class="bg-video" width='100%', height='100%', controls='none', poster='img/bg__main--production.jpg')
-			source(src='video/bg-video.mp4', type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+			source(src='video/bg-video.mp4', type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"')
+			source(src='video/bg-video.webm', type='video/webm;codecs="vp8, vorbis"')
 	.bgVideo-controll
 		button.bgVideo-controll__stop
